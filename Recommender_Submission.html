@@ -1,0 +1,1099 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:22.9px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:22.9px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:20.5px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:20.5px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:8.5px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:8.5px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:8.5px;color:rgb(51,121,182);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:8.5px;color:rgb(51,121,182);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:18.1px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:18.1px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:8.5px;color:rgb(51,51,51);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:8.5px;color:rgb(51,51,51);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:8.5px;color:rgb(51,51,51);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:8.5px;color:rgb(51,51,51);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_009{font-family:Courier New,serif;font-size:7.9px;color:rgb(153,153,135);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_009{font-family:Courier New,serif;font-size:7.9px;color:rgb(153,153,135);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_010{font-family:Courier New,serif;font-size:7.9px;color:rgb(153,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Courier New,serif;font-size:7.9px;color:rgb(153,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Courier New,serif;font-size:7.9px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Courier New,serif;font-size:7.9px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Courier New,serif;font-size:7.9px;color:rgb(220,16,67);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Courier New,serif;font-size:7.9px;color:rgb(220,16,67);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Courier New,serif;font-size:7.9px;color:rgb(0,153,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Courier New,serif;font-size:7.9px;color:rgb(0,153,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:14.5px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:14.5px;color:rgb(51,51,51);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Courier New,serif;font-size:7.9px;color:rgb(153,0,114);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Courier New,serif;font-size:7.9px;color:rgb(153,0,114);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background01.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.50px;top:26.10px" class="cls_002"><span class="cls_002">R Notebook</span></div>
+<div style="position:absolute;left:37.50px;top:62.71px" class="cls_003"><span class="cls_003">Problem Setting and Approach</span></div>
+<div style="position:absolute;left:37.50px;top:93.92px" class="cls_004"><span class="cls_004">Movielens, a platform for non-commercial personalized movie recommendations has made available several movie datasets of different</span></div>
+<div style="position:absolute;left:37.50px;top:105.92px" class="cls_004"><span class="cls_004">sizes. Throughout this kernel, we will use the 10 million rows dataset to create a movie recommender.</span></div>
+<div style="position:absolute;left:37.50px;top:123.93px" class="cls_004"><span class="cls_004">Predictors include userId, movieId, movie title, year released, timestamp of rating and genre. Our target variable is continuous, thus we will</span></div>
+<div style="position:absolute;left:37.50px;top:135.93px" class="cls_004"><span class="cls_004">measure success of our algorithm by </span><A HREF="https://en.wikipedia.org/wiki/Mean_squared_error">Residual Mean Square Error</A> </span><span class="cls_004">.</span></div>
+<div style="position:absolute;left:37.50px;top:153.93px" class="cls_004"><span class="cls_004">To successfully plan a strategy , we will visually explore our data and clean/engineer it whenever possible.</span></div>
+<div style="position:absolute;left:37.50px;top:171.94px" class="cls_004"><span class="cls_004">After experimenting with various approaches, our final prediction attempt will focus around matrix factorization.</span></div>
+<div style="position:absolute;left:37.50px;top:193.55px" class="cls_006"><span class="cls_006">Model Basis</span></div>
+<div style="position:absolute;left:37.50px;top:221.75px" class="cls_004"><span class="cls_004">We will approach the prediction of rating in the following manner:</span></div>
+<div style="position:absolute;left:61.51px;top:239.76px" class="cls_004"><span class="cls_004">The </span><span class="cls_007">mean rating</span><span class="cls_004"> of all movies is the easiest, yet justified, prediction we could give. By taking a look at the distribution of ratings, it</span></div>
+<div style="position:absolute;left:61.51px;top:251.76px" class="cls_004"><span class="cls_004">becomes obvious that the mean has the highest probability to happen. If we were asked to pick a rating for a movie we don’t know</span></div>
+<div style="position:absolute;left:61.51px;top:263.77px" class="cls_004"><span class="cls_004">from a user we also don’t know, the safest guess would be the mean. But since we have features available, we will try to use them as</span></div>
+<div style="position:absolute;left:61.51px;top:275.77px" class="cls_004"><span class="cls_004">follows:</span></div>
+<div style="position:absolute;left:61.51px;top:293.77px" class="cls_004"><span class="cls_004">On top of the mean rating, we can add the mean of each </span><span class="cls_007">specific movie</span><span class="cls_004"> we want to predict. For example, Lord of the Rings is widely</span></div>
+<div style="position:absolute;left:61.51px;top:305.78px" class="cls_004"><span class="cls_004">considered a good movie. Its mean rating will be way higher than the overall mean (which is shaped by both renowned and not so-</span></div>
+<div style="position:absolute;left:61.51px;top:317.78px" class="cls_004"><span class="cls_004">acclaimed movies). As a result, a good movie’s average will raise our prediction, while a bad movie’s will decrease respectively. A</span></div>
+<div style="position:absolute;left:61.51px;top:329.78px" class="cls_004"><span class="cls_004">common word in statistics used to describe such effects is bias. Thus, we’ll call it movie bias and calculate is as the difference</span></div>
+<div style="position:absolute;left:61.51px;top:341.79px" class="cls_004"><span class="cls_004">between mean rating of all movies and the mean rating of the specific movie we want to predict a rating for. For example, if we</span></div>
+<div style="position:absolute;left:61.51px;top:353.79px" class="cls_004"><span class="cls_004">suppose the mean rating of all movies is 3.5, but Lord of the Rings has a mean rating of 4.5, then the movie bias of Lord of the Rings</span></div>
+<div style="position:absolute;left:61.51px;top:365.79px" class="cls_004"><span class="cls_004">is 1 ( = 4.5 - 3.5).</span></div>
+<div style="position:absolute;left:61.51px;top:383.80px" class="cls_004"><span class="cls_004">Accordingly, the </span><span class="cls_007">same applies to users</span><span class="cls_004">. Some users are demanding and tend to rate lower than others. We also need to take this</span></div>
+<div style="position:absolute;left:61.51px;top:395.80px" class="cls_004"><span class="cls_004">under consideration. Continuing the example above, a user with mean rating of 2 will get a -1.5 ( = 2 - 3.5) user bias effect in our</span></div>
+<div style="position:absolute;left:61.51px;top:407.81px" class="cls_004"><span class="cls_004">prediction.</span></div>
+<div style="position:absolute;left:61.51px;top:425.81px" class="cls_004"><span class="cls_004">Finally, we will try to encapsulate a more abstract form of </span><span class="cls_007">genres</span><span class="cls_004">. By abstract we mean that we will not explore the presence of</span></div>
+<div style="position:absolute;left:61.51px;top:437.81px" class="cls_004"><span class="cls_004">genres per se, but rather the presence of </span><span class="cls_008">concepts</span><span class="cls_004">. These concepts can be whichever factor describes a preference. Each user has</span></div>
+<div style="position:absolute;left:61.51px;top:449.82px" class="cls_004"><span class="cls_004">a tendency towards a specific factor and each movie is somehow associated (more or less, positively or negatively) with this factor.</span></div>
+<div style="position:absolute;left:37.50px;top:471.42px" class="cls_006"><span class="cls_006">Considering the number of ratings</span></div>
+<div style="position:absolute;left:37.50px;top:499.63px" class="cls_004"><span class="cls_004">The fact that not all movies bear the same number of ratings creates a distortion. For movies (the same applies to users) with many ratings,</span></div>
+<div style="position:absolute;left:37.50px;top:511.63px" class="cls_004"><span class="cls_004">it’s safer for us to base our prediction on their calculated bias. But it becomes overt that movies with low ratings may lead us to assign</span></div>
+<div style="position:absolute;left:37.50px;top:523.64px" class="cls_004"><span class="cls_004">biases they don’t actually deserve. This discrepancy can be rectified by adjusting the way we compute each movie’s average rating. Movie</span></div>
+<div style="position:absolute;left:37.50px;top:535.64px" class="cls_004"><span class="cls_004">bias is calculated by computing the difference between each rating and the mean rating of all movies, summing up all these differences and</span></div>
+<div style="position:absolute;left:37.50px;top:547.64px" class="cls_004"><span class="cls_004">diving by the number of movie ratings to make this measure average. In order to control for the number of ratings (that is, take into more</span></div>
+<div style="position:absolute;left:37.50px;top:559.65px" class="cls_004"><span class="cls_004">consideration a movie’s ratings if it has many ratings and vice versa), we will add a penalty term when dividing with the sum of all</span></div>
+<div style="position:absolute;left:37.50px;top:571.65px" class="cls_004"><span class="cls_004">differences from the mean. This way, movies with many ratings will get almost no influenced at all by the penalty, while movies with few</span></div>
+<div style="position:absolute;left:37.50px;top:583.65px" class="cls_004"><span class="cls_004">ratings might get their average bias halfed or more.</span></div>
+<div style="position:absolute;left:37.50px;top:601.66px" class="cls_004"><span class="cls_004">To make it more straightforward, we can consider a very popular movie with a sum of differences from the genereal mean of 2000, number</span></div>
+<div style="position:absolute;left:37.50px;top:613.66px" class="cls_004"><span class="cls_004">of ratings of 2500 and a penalty term of 4. Before penalization, the popular movie would yield a movie bias of +0.8 (= 20,000/25,000). After</span></div>
+<div style="position:absolute;left:37.50px;top:625.67px" class="cls_004"><span class="cls_004">penalization, it would return 0.799 (= 20,000 / 25,004), almost the same as before. On the other hand, a not-so-popular movie with just two</span></div>
+<div style="position:absolute;left:37.50px;top:637.67px" class="cls_004"><span class="cls_004">ratings and a sum of (two) differences at +3, would return, before penalization, a movie bias of +1.5 ( = 3 / 2) . After, penalization it would</span></div>
+<div style="position:absolute;left:37.50px;top:649.67px" class="cls_004"><span class="cls_004">become significantly lower at .5 ( = 3 / 6 ).</span></div>
+<div style="position:absolute;left:37.50px;top:667.68px" class="cls_004"><span class="cls_004">Thus, it becomes obvious that penalization minimizes biases based on a few ratings, while it leaves almost untouched biases returned by a</span></div>
+<div style="position:absolute;left:37.50px;top:679.68px" class="cls_004"><span class="cls_004">great number of ratings. A common term for this penalty is lamba ( the greek l, lambda), and that’s how we’ll call it throughout this analysis.</span></div>
+<div style="position:absolute;left:37.50px;top:691.68px" class="cls_004"><span class="cls_004">Since lambda is a tuning parameter, we need to choose the best. We will cross-validate (ie try different values and compute their efficiency)</span></div>
+<div style="position:absolute;left:37.50px;top:703.69px" class="cls_004"><span class="cls_004">to get an optimal penalty term for both the movie and the user biases.</span></div>
+<div style="position:absolute;left:37.50px;top:725.29px" class="cls_006"><span class="cls_006">Factorizing the residuals</span></div>
+<div style="position:absolute;left:37.50px;top:753.50px" class="cls_004"><span class="cls_004">So far, the formula of our prediction is formed as follows:</span></div>
+<div style="position:absolute;left:37.50px;top:771.51px" class="cls_004"><span class="cls_004">prediction = mean_rating_of_all_movies + movie_bias + user_bias</span></div>
+<div style="position:absolute;left:37.50px;top:789.51px" class="cls_004"><span class="cls_004">or</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:852px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background02.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.50px;top:29.10px" class="cls_004"><span class="cls_004">hat{y} = mu + b_i + b_u</span></div>
+<div style="position:absolute;left:37.50px;top:47.11px" class="cls_004"><span class="cls_004">The difference between prediction and reality is the sum of residuals (notated with the greek epsilon - epsilon)</span></div>
+<div style="position:absolute;left:37.50px;top:65.11px" class="cls_004"><span class="cls_004">Although this naive model is a good basis, it is not enough. We need to analyze its residuals and take more out of it. Inside the ratings</span></div>
+<div style="position:absolute;left:37.50px;top:77.11px" class="cls_004"><span class="cls_004">matrix exist many groups of users and movies somehow corellated. Some users like thrillers and tend to rate them higher, others like</span></div>
+<div style="position:absolute;left:37.50px;top:89.12px" class="cls_004"><span class="cls_004">Leonardo di Caprio, others dispise romance movies, etc. These trends are usually called latent factors or concepts and are almost infinite.</span></div>
+<div style="position:absolute;left:37.50px;top:101.12px" class="cls_004"><span class="cls_004">The current state of our model ignores such factors and leaves similar residuals among them.</span></div>
+<div style="position:absolute;left:37.50px;top:113.12px" class="cls_004"><span class="cls_004">In order to detect and take into consideration the most important of them, we will employ a technique called matrix factorization.</span></div>
+<div style="position:absolute;left:37.50px;top:131.13px" class="cls_004"><span class="cls_004">The first step to factorize the residuals is to spread them in a sparse matrix. That means we convert each user into a row, each movie into a</span></div>
+<div style="position:absolute;left:37.50px;top:143.13px" class="cls_004"><span class="cls_004">column with the corresponding ratings the values of this matrix. Its dimensions are the number of distinct users x the number of distinct</span></div>
+<div style="position:absolute;left:37.50px;top:155.14px" class="cls_004"><span class="cls_004">movies . Since users haven’t rated all movies, this matrix will be very sparse, containing NAs wherever a user has not rated a movie.</span></div>
+<div style="position:absolute;left:37.50px;top:173.14px" class="cls_004"><span class="cls_004">Our goal is to decompose this sparse matrix of residuals into 3 dense matrices, which, multiplied with each other, return a dense matrix very</span></div>
+<div style="position:absolute;left:37.50px;top:185.14px" class="cls_004"><span class="cls_004">close to our initial sparse. In order to achieve it we will employ singular value decomposition (SVD for short). If we name our initial matrix of</span></div>
+<div style="position:absolute;left:37.50px;top:197.15px" class="cls_004"><span class="cls_004">(m x n) dimensions A and the number of underlying concepts is k, we can represent A as the multiplication of a (m x k) matrix (commonly</span></div>
+<div style="position:absolute;left:37.50px;top:209.15px" class="cls_004"><span class="cls_004">notated as U) with a (k x k) nonnegative diagonal matrix (notated as Sigma) and a (k x n) matrix (notated as V)</span></div>
+<div style="position:absolute;left:37.50px;top:227.16px" class="cls_004"><span class="cls_004">A = U Sigma V^T</span></div>
+<div style="position:absolute;left:37.50px;top:245.16px" class="cls_004"><span class="cls_004">This fairly computationally expensive process will be realized with the help of the funkSVD function from the recommenderlab package. After</span></div>
+<div style="position:absolute;left:37.50px;top:257.16px" class="cls_004"><span class="cls_004">this transformation is achieved, we have managed to decompose our residuals epsilon. Each user-movie instance of residuals can be</span></div>
+<div style="position:absolute;left:37.50px;top:269.17px" class="cls_004"><span class="cls_004">represented by a sum of multiplied values from the U, Sigma, and T matrices. The residual of movie i and user j is rewritten as:</span></div>
+<div style="position:absolute;left:37.50px;top:287.17px" class="cls_004"><span class="cls_004">epsilon_{i,j} = sum p_{i,1} q_{1,j} + p_{i,2} q_{2,j} + … + p_{i,k} q_{k,j}</span></div>
+<div style="position:absolute;left:37.50px;top:305.18px" class="cls_004"><span class="cls_004">Where p and q represent values from the matrices U and Q obtained by the SVD. k is the number of concepts with the variability of each</span></div>
+<div style="position:absolute;left:37.50px;top:317.18px" class="cls_004"><span class="cls_004">term p_{i,k} q_{k,j} decreasing (thus, concept 1 has more predictive power that concept 2 etc.)</span></div>
+<div style="position:absolute;left:37.50px;top:335.19px" class="cls_004"><span class="cls_004">This decomposition can be embedded in our model:</span></div>
+<div style="position:absolute;left:37.50px;top:353.19px" class="cls_004"><span class="cls_004">hat{y} = mu + b_i + b_u + p_{i,1} q_{1,j} + p_{i,2} q_{2,j}+ … + p_{i,k} q_{k,j}</span></div>
+<div style="position:absolute;left:37.50px;top:374.20px" class="cls_003"><span class="cls_003">Libraries and Data Import</span></div>
+<div style="position:absolute;left:37.50px;top:405.41px" class="cls_004"><span class="cls_004">Let’s start our journey by importing libraries.</span></div>
+<div style="position:absolute;left:43.50px;top:428.21px" class="cls_009"><span class="cls_009">#Importing necessary libraries</span></div>
+<div style="position:absolute;left:43.50px;top:449.82px" class="cls_009"><span class="cls_009">#Data manipulation</span></div>
+<div style="position:absolute;left:43.50px;top:460.62px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(tidyverse)) install.packages(</span><span class="cls_012">"tidyverse"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:471.42px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:482.23px" class="cls_009"><span class="cls_009"># Train/Test split and Model Training</span></div>
+<div style="position:absolute;left:43.50px;top:493.03px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(caret)) install.packages(</span><span class="cls_012">"caret"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:216.64px;top:503.83px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:514.64px" class="cls_009"><span class="cls_009">#Handle Tables</span></div>
+<div style="position:absolute;left:43.50px;top:525.44px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(data.table)) install.packages(</span><span class="cls_012">"data.table"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:240.04px;top:536.24px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:547.04px" class="cls_009"><span class="cls_009">#SVD decomposition</span></div>
+<div style="position:absolute;left:43.50px;top:557.85px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(recommenderlab)) install.packages(</span><span class="cls_012">"recommenderlab"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:568.65px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:579.45px" class="cls_009"><span class="cls_009"># to plot multiple grobs alongside</span></div>
+<div style="position:absolute;left:43.50px;top:590.26px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(gridExtra)) install.packages(</span><span class="cls_012">"gridExtra"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:601.06px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:611.86px" class="cls_009"><span class="cls_009"># to separate stacked genres</span></div>
+<div style="position:absolute;left:43.50px;top:622.67px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(splitstackshape))install.packages(</span><span class="cls_012">"splitstackshape"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:633.47px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:644.27px" class="cls_009"><span class="cls_009">#to transform shape of our data</span></div>
+<div style="position:absolute;left:43.50px;top:655.07px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(reshape2)) install.packages(</span><span class="cls_012">"reshape2"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:665.88px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:676.68px" class="cls_009"><span class="cls_009">#For rmse function</span></div>
+<div style="position:absolute;left:43.50px;top:687.48px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(ModelMetrics))  install.packages(</span><span class="cls_012">"ModelMetrics"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:221.32px;top:698.29px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:37.50px;top:722.29px" class="cls_004"><span class="cls_004">Now we need to download our data, read each file as a table and finally merge them into one.</span></div>
+<div style="position:absolute;left:37.50px;top:740.30px" class="cls_004"><span class="cls_004">Note: Because my pc could not run such a large dataset, I produced the report with a quarter its rows. In case you want to run on the whole</span></div>
+<div style="position:absolute;left:37.50px;top:752.30px" class="cls_004"><span class="cls_004">dataset, disable the command that splits it.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1704px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background03.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:33.90px" class="cls_011"><span class="cls_011">dl &lt;- tempfile()</span></div>
+<div style="position:absolute;left:43.50px;top:44.70px" class="cls_011"><span class="cls_011">download.file(</span><span class="cls_012">"<A HREF="http://files.grouplens.org/datasets/movielens/ml-10m.zip"/">http://files.grouplens.org/datasets/movielens/ml-10m.zip"</A> </span><span class="cls_011">, dl)</span></div>
+<div style="position:absolute;left:43.50px;top:66.31px" class="cls_011"><span class="cls_011">ratings &lt;- fread(text = gsub(</span><span class="cls_012">"::"</span><span class="cls_011">, </span><span class="cls_012">"\t"</span><span class="cls_011">, readLines(unzip(dl, </span><span class="cls_012">"ml-10M100K/ratings.dat"</span><span class="cls_011">))),</span></div>
+<div style="position:absolute;left:123.05px;top:77.11px" class="cls_011"><span class="cls_011">col.names = c(</span><span class="cls_012">"userId"</span><span class="cls_011">, </span><span class="cls_012">"movieId"</span><span class="cls_011">, </span><span class="cls_012">"rating"</span><span class="cls_011">, </span><span class="cls_012">"timestamp"</span><span class="cls_011">))</span></div>
+<div style="position:absolute;left:43.50px;top:98.72px" class="cls_011"><span class="cls_011">movies &lt;- str_split_fixed(readLines(unzip(dl, </span><span class="cls_012">"ml-10M100K/movies.dat"</span><span class="cls_011">)), </span><span class="cls_012">"\\::"</span><span class="cls_011">, </span><span class="cls_013">3</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:109.52px" class="cls_011"><span class="cls_011">colnames(movies) &lt;- c(</span><span class="cls_012">"movieId"</span><span class="cls_011">, </span><span class="cls_012">"title"</span><span class="cls_011">, </span><span class="cls_012">"genres"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:120.33px" class="cls_011"><span class="cls_011">movies &lt;- as.data.frame(movies) %>% mutate(movieId = as.numeric(levels(movieId))[movieId],</span></div>
+<div style="position:absolute;left:244.72px;top:131.13px" class="cls_011"><span class="cls_011">title = as.character(title),</span></div>
+<div style="position:absolute;left:244.72px;top:141.93px" class="cls_011"><span class="cls_011">genres = as.character(genres))</span></div>
+<div style="position:absolute;left:43.50px;top:163.54px" class="cls_011"><span class="cls_011">movielens &lt;- left_join(ratings, movies, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:185.14px" class="cls_009"><span class="cls_009">#if you want to run the whole dataset, disable the following command</span></div>
+<div style="position:absolute;left:43.50px;top:195.95px" class="cls_011"><span class="cls_011">movielens &lt;- movielens %>% slice(</span><span class="cls_013">1</span><span class="cls_011">:floor(nrow(movielens)/</span><span class="cls_013">4</span><span class="cls_011">))</span></div>
+<div style="position:absolute;left:43.50px;top:217.55px" class="cls_011"><span class="cls_011">rm( ratings, movies )</span></div>
+<div style="position:absolute;left:37.50px;top:244.56px" class="cls_003"><span class="cls_003">EDA and Data Cleaning</span></div>
+<div style="position:absolute;left:37.50px;top:275.77px" class="cls_004"><span class="cls_004">Now that we successfully imported our data, we need to start exploring it. Some quick thoughts of this first glance are:</span></div>
+<div style="position:absolute;left:61.51px;top:293.77px" class="cls_007"><span class="cls_007">movieId</span><span class="cls_004"> and title contain almost the </span><span class="cls_007">same information</span><span class="cls_004">. At times, titles are repeated. Thus, we expect unique movieIds to be more</span></div>
+<div style="position:absolute;left:61.51px;top:305.78px" class="cls_004"><span class="cls_004">than the unique titles. For our model, we will only keep movieId as a predictor.</span></div>
+<div style="position:absolute;left:61.51px;top:317.78px" class="cls_007"><span class="cls_007">year</span><span class="cls_004"> can contain </span><span class="cls_007">little to no predictive power</span><span class="cls_004">. People who like space movies will rate highly “2001:A space odyssey” as well as</span></div>
+<div style="position:absolute;left:61.51px;top:329.78px" class="cls_004"><span class="cls_004">“Interstellar”. It stays fot the EDA but we probably won’t need it in our prediction.</span></div>
+<div style="position:absolute;left:61.51px;top:341.79px" class="cls_007"><span class="cls_007">genres</span><span class="cls_004">, even though they are very hard to be used directly in a model, will be a good signal for the existence of underlying </span><span class="cls_007">concepts</span></div>
+<div style="position:absolute;left:61.51px;top:353.79px" class="cls_004"><span class="cls_004">in our data.</span></div>
+<div style="position:absolute;left:61.51px;top:365.79px" class="cls_007"><span class="cls_007">timestamp</span><span class="cls_004"> probably contains </span><span class="cls_007">no information</span><span class="cls_004"> at all. The time a rating is done has nothing to do with a user’s preferences or the</span></div>
+<div style="position:absolute;left:61.51px;top:377.80px" class="cls_004"><span class="cls_004">quality of a film. However, we will briefly explore it below.</span></div>
+<div style="position:absolute;left:61.51px;top:389.80px" class="cls_007"><span class="cls_007">title</span><span class="cls_004"> nests another feature, the </span><span class="cls_007">year of release</span><span class="cls_004">. We will unnest it to test whether it contains any power.</span></div>
+<div style="position:absolute;left:37.50px;top:411.41px" class="cls_006"><span class="cls_006">Distribution of Ratings</span></div>
+<div style="position:absolute;left:37.50px;top:439.61px" class="cls_004"><span class="cls_004">Throughout our analysis, the mean of ratings will play a significant role. It will be the base of our prediction. Let’s take a look at the</span></div>
+<div style="position:absolute;left:37.50px;top:451.62px" class="cls_004"><span class="cls_004">distribution that shapes it.</span></div>
+<div style="position:absolute;left:37.50px;top:763.71px" class="cls_004"><span class="cls_004">Both the mean (3.51) and the median (3.5) are greater than half of the range (eg 2.5). That suggests a tendency towards high ratings. It</span></div>
+<div style="position:absolute;left:37.50px;top:775.71px" class="cls_004"><span class="cls_004">looks like it is much more likely for someone to rate a movie she liked rather than one she didn’t. Also, users are lenient with movies they</span></div>
+<div style="position:absolute;left:37.50px;top:787.71px" class="cls_004"><span class="cls_004">don’t like and seldom place ratings beneath 2.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2556px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background04.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.50px;top:27.30px" class="cls_006"><span class="cls_006">Count vs Mean Rating</span></div>
+<div style="position:absolute;left:37.50px;top:55.51px" class="cls_004"><span class="cls_004">Now we want to check, both for users and movies, whether the number of ratings goes along with the mean rating. In other words, we seek</span></div>
+<div style="position:absolute;left:37.50px;top:67.51px" class="cls_004"><span class="cls_004">to answer the question: “Do movies (users) with many ratings tend to have (give) high ratings and vice versa?”</span></div>
+<div style="position:absolute;left:37.50px;top:379.60px" class="cls_004"><span class="cls_004">We notice a correlation for the movies. That could be a hint that popular movies tend to have high ratings. On the other hand, users seem</span></div>
+<div style="position:absolute;left:37.50px;top:391.60px" class="cls_004"><span class="cls_004">randomly scattered not showing any strong tendency.</span></div>
+<div style="position:absolute;left:37.50px;top:413.21px" class="cls_006"><span class="cls_006">Best and Worst Movies by Rating</span></div>
+<div style="position:absolute;left:37.50px;top:441.42px" class="cls_004"><span class="cls_004">For starters, let’s take a look at the best and the worst movies, without taking into account the number of ratings they have.</span></div>
+<div style="position:absolute;left:37.50px;top:753.50px" class="cls_004"><span class="cls_004">Both Best and Worst movies all share the same rating. Oddly enough, they are not so recognizable. To account for their popoularity we will</span></div>
+<div style="position:absolute;left:37.50px;top:765.51px" class="cls_004"><span class="cls_004">replot them, this time with the number of ratings as label instead of the average rating.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3408px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background05.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.50px;top:323.18px" class="cls_004"><span class="cls_004">As expected, almost all plotted movies have 1 rating. That explains the extreme means.</span></div>
+<div style="position:absolute;left:37.50px;top:341.19px" class="cls_004"><span class="cls_004">To account for this discrepancy, we will filter the number of ratings. As a low limit we will define the first quantile of the number of ratings.</span></div>
+<div style="position:absolute;left:43.50px;top:363.99px" class="cls_009"><span class="cls_009">#pick the 1rd quantile of the movie count as a low limit</span></div>
+<div style="position:absolute;left:43.50px;top:374.80px" class="cls_011"><span class="cls_011">limit &lt;- (summary(mov_df$movie_cnt))[</span><span class="cls_013">5</span><span class="cls_011">]</span></div>
+<div style="position:absolute;left:37.50px;top:692.89px" class="cls_004"><span class="cls_004">Now we start to recognize the movies. Among the best are some all time classics, while among the worst are many commonly critised</span></div>
+<div style="position:absolute;left:37.50px;top:704.89px" class="cls_004"><span class="cls_004">movies.</span></div>
+<div style="position:absolute;left:37.50px;top:722.89px" class="cls_004"><span class="cls_004">We need to take this effect under consideration. Later, in the modelling section, we will apply a penalty term to each movie’s mean rating so</span></div>
+<div style="position:absolute;left:37.50px;top:734.90px" class="cls_004"><span class="cls_004">that it encompasses the number of ratings they were shaped from.</span></div>
+<div style="position:absolute;left:37.50px;top:756.50px" class="cls_006"><span class="cls_006">Genres</span></div>
+<div style="position:absolute;left:37.50px;top:784.71px" class="cls_004"><span class="cls_004">The genres column potentially contains great value. Unfortunately for us, many movies belong to more than one genre, and all of them are</span></div>
+<div style="position:absolute;left:37.50px;top:796.71px" class="cls_004"><span class="cls_004">binded together in one column, separated by “|”. We need to unnest them before we start exploring them.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4260px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background06.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:33.90px" class="cls_009"><span class="cls_009">#For every genre entry create a separate row containing only this entry</span></div>
+<div style="position:absolute;left:43.50px;top:44.70px" class="cls_011"><span class="cls_011">movielens_genres &lt;- movielens %>%</span></div>
+<div style="position:absolute;left:80.94px;top:55.51px" class="cls_011"><span class="cls_011">cSplit( </span><span class="cls_012">"genres"</span><span class="cls_011">, </span><span class="cls_009">#split the genres column</span></div>
+<div style="position:absolute;left:113.70px;top:66.31px" class="cls_011"><span class="cls_011">sep=</span><span class="cls_012">"|"</span><span class="cls_011">, </span><span class="cls_009">#on separator |</span></div>
+<div style="position:absolute;left:113.70px;top:77.11px" class="cls_011"><span class="cls_011">direction =  </span><span class="cls_012">"long"</span><span class="cls_011"> ) </span><span class="cls_009">#towards a long direction</span></div>
+<div style="position:absolute;left:37.50px;top:101.12px" class="cls_004"><span class="cls_004">Now that we split genres apart, let’s look at the unique values contained in it and the frequency they appear.</span></div>
+<div style="position:absolute;left:43.50px;top:123.93px" class="cls_011"><span class="cls_011">## [1] " Genres count of distinct values : "</span></div>
+<div style="position:absolute;left:43.50px;top:152.73px" class="cls_011"><span class="cls_011">## .</span></div>
+<div style="position:absolute;left:43.50px;top:163.54px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:118.38px;top:163.54px" class="cls_011"><span class="cls_011">Drama</span></div>
+<div style="position:absolute;left:202.60px;top:163.54px" class="cls_011"><span class="cls_011">Comedy</span></div>
+<div style="position:absolute;left:291.51px;top:163.54px" class="cls_011"><span class="cls_011">Action</span></div>
+<div style="position:absolute;left:43.50px;top:174.34px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:109.02px;top:174.34px" class="cls_011"><span class="cls_011">1089529</span></div>
+<div style="position:absolute;left:202.60px;top:174.34px" class="cls_011"><span class="cls_011">983341</span></div>
+<div style="position:absolute;left:291.51px;top:174.34px" class="cls_011"><span class="cls_011">705929</span></div>
+<div style="position:absolute;left:43.50px;top:185.14px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:104.34px;top:185.14px" class="cls_011"><span class="cls_011">Thriller</span></div>
+<div style="position:absolute;left:188.57px;top:185.14px" class="cls_011"><span class="cls_011">Adventure</span></div>
+<div style="position:absolute;left:286.83px;top:185.14px" class="cls_011"><span class="cls_011">Romance</span></div>
+<div style="position:absolute;left:43.50px;top:195.95px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:113.70px;top:195.95px" class="cls_011"><span class="cls_011">642090</span></div>
+<div style="position:absolute;left:202.60px;top:195.95px" class="cls_011"><span class="cls_011">529676</span></div>
+<div style="position:absolute;left:291.51px;top:195.95px" class="cls_011"><span class="cls_011">477216</span></div>
+<div style="position:absolute;left:43.50px;top:206.75px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:113.70px;top:206.75px" class="cls_011"><span class="cls_011">Sci-Fi</span></div>
+<div style="position:absolute;left:207.28px;top:206.75px" class="cls_011"><span class="cls_011">Crime</span></div>
+<div style="position:absolute;left:286.83px;top:206.75px" class="cls_011"><span class="cls_011">Fantasy</span></div>
+<div style="position:absolute;left:43.50px;top:217.55px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:113.70px;top:217.55px" class="cls_011"><span class="cls_011">371151</span></div>
+<div style="position:absolute;left:202.60px;top:217.55px" class="cls_011"><span class="cls_011">367340</span></div>
+<div style="position:absolute;left:291.51px;top:217.55px" class="cls_011"><span class="cls_011">256601</span></div>
+<div style="position:absolute;left:43.50px;top:228.36px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:104.34px;top:228.36px" class="cls_011"><span class="cls_011">Children</span></div>
+<div style="position:absolute;left:202.60px;top:228.36px" class="cls_011"><span class="cls_011">Horror</span></div>
+<div style="position:absolute;left:286.83px;top:228.36px" class="cls_011"><span class="cls_011">Mystery</span></div>
+<div style="position:absolute;left:43.50px;top:239.16px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:113.70px;top:239.16px" class="cls_011"><span class="cls_011">206636</span></div>
+<div style="position:absolute;left:202.60px;top:239.16px" class="cls_011"><span class="cls_011">190619</span></div>
+<div style="position:absolute;left:291.51px;top:239.16px" class="cls_011"><span class="cls_011">158213</span></div>
+<div style="position:absolute;left:43.50px;top:249.96px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:127.73px;top:249.96px" class="cls_011"><span class="cls_011">War</span></div>
+<div style="position:absolute;left:188.57px;top:249.96px" class="cls_011"><span class="cls_011">Animation</span></div>
+<div style="position:absolute;left:286.83px;top:249.96px" class="cls_011"><span class="cls_011">Musical</span></div>
+<div style="position:absolute;left:43.50px;top:260.76px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:113.70px;top:260.76px" class="cls_011"><span class="cls_011">141982</span></div>
+<div style="position:absolute;left:202.60px;top:260.76px" class="cls_011"><span class="cls_011">130114</span></div>
+<div style="position:absolute;left:291.51px;top:260.76px" class="cls_011"><span class="cls_011">120953</span></div>
+<div style="position:absolute;left:43.50px;top:271.57px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:109.02px;top:271.57px" class="cls_011"><span class="cls_011">Western</span></div>
+<div style="position:absolute;left:188.57px;top:271.57px" class="cls_011"><span class="cls_011">Film-Noir</span></div>
+<div style="position:absolute;left:268.12px;top:271.57px" class="cls_011"><span class="cls_011">Documentary</span></div>
+<div style="position:absolute;left:43.50px;top:282.37px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:118.38px;top:282.37px" class="cls_011"><span class="cls_011">52405</span></div>
+<div style="position:absolute;left:207.28px;top:282.37px" class="cls_011"><span class="cls_011">33373</span></div>
+<div style="position:absolute;left:296.19px;top:282.37px" class="cls_011"><span class="cls_011">25368</span></div>
+<div style="position:absolute;left:43.50px;top:293.17px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:123.05px;top:293.17px" class="cls_011"><span class="cls_011">IMAX (no genres listed)</span></div>
+<div style="position:absolute;left:43.50px;top:303.98px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:123.05px;top:303.98px" class="cls_011"><span class="cls_011">2104</span></div>
+<div style="position:absolute;left:226.00px;top:303.98px" class="cls_011"><span class="cls_011">2</span></div>
+<div style="position:absolute;left:37.50px;top:327.98px" class="cls_004"><span class="cls_004">We notice that some genres are pretty similar. In order to concentrate them a bit, we will merge:</span></div>
+<div style="position:absolute;left:61.51px;top:345.99px" class="cls_004"><span class="cls_004">Horror to Thriller</span></div>
+<div style="position:absolute;left:61.51px;top:357.99px" class="cls_004"><span class="cls_004">Adventure to Action</span></div>
+<div style="position:absolute;left:61.51px;top:370.00px" class="cls_004"><span class="cls_004">War to Action</span></div>
+<div style="position:absolute;left:61.51px;top:382.00px" class="cls_004"><span class="cls_004">Sci-Fi to Fantasy</span></div>
+<div style="position:absolute;left:37.50px;top:400.00px" class="cls_004"><span class="cls_004">And the table of frequencies changes to:</span></div>
+<div style="position:absolute;left:43.50px;top:422.81px" class="cls_011"><span class="cls_011">## [1] " Genres count of distinct values : "</span></div>
+<div style="position:absolute;left:43.50px;top:451.62px" class="cls_011"><span class="cls_011">## .</span></div>
+<div style="position:absolute;left:43.50px;top:462.42px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:113.70px;top:462.42px" class="cls_011"><span class="cls_011">Action</span></div>
+<div style="position:absolute;left:207.28px;top:462.42px" class="cls_011"><span class="cls_011">Drama</span></div>
+<div style="position:absolute;left:291.51px;top:462.42px" class="cls_011"><span class="cls_011">Comedy</span></div>
+<div style="position:absolute;left:43.50px;top:473.22px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:109.02px;top:473.22px" class="cls_011"><span class="cls_011">1377587</span></div>
+<div style="position:absolute;left:197.93px;top:473.22px" class="cls_011"><span class="cls_011">1089529</span></div>
+<div style="position:absolute;left:291.51px;top:473.22px" class="cls_011"><span class="cls_011">983341</span></div>
+<div style="position:absolute;left:43.50px;top:484.03px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:104.34px;top:484.03px" class="cls_011"><span class="cls_011">Thriller</span></div>
+<div style="position:absolute;left:197.93px;top:484.03px" class="cls_011"><span class="cls_011">Fantasy</span></div>
+<div style="position:absolute;left:286.83px;top:484.03px" class="cls_011"><span class="cls_011">Romance</span></div>
+<div style="position:absolute;left:43.50px;top:494.83px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:113.70px;top:494.83px" class="cls_011"><span class="cls_011">832709</span></div>
+<div style="position:absolute;left:202.60px;top:494.83px" class="cls_011"><span class="cls_011">627752</span></div>
+<div style="position:absolute;left:291.51px;top:494.83px" class="cls_011"><span class="cls_011">477216</span></div>
+<div style="position:absolute;left:43.50px;top:505.63px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:118.38px;top:505.63px" class="cls_011"><span class="cls_011">Crime</span></div>
+<div style="position:absolute;left:193.25px;top:505.63px" class="cls_011"><span class="cls_011">Children</span></div>
+<div style="position:absolute;left:286.83px;top:505.63px" class="cls_011"><span class="cls_011">Mystery</span></div>
+<div style="position:absolute;left:43.50px;top:516.44px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:113.70px;top:516.44px" class="cls_011"><span class="cls_011">367340</span></div>
+<div style="position:absolute;left:202.60px;top:516.44px" class="cls_011"><span class="cls_011">206636</span></div>
+<div style="position:absolute;left:291.51px;top:516.44px" class="cls_011"><span class="cls_011">158213</span></div>
+<div style="position:absolute;left:43.50px;top:527.24px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:99.66px;top:527.24px" class="cls_011"><span class="cls_011">Animation</span></div>
+<div style="position:absolute;left:197.93px;top:527.24px" class="cls_011"><span class="cls_011">Musical</span></div>
+<div style="position:absolute;left:286.83px;top:527.24px" class="cls_011"><span class="cls_011">Western</span></div>
+<div style="position:absolute;left:43.50px;top:538.04px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:113.70px;top:538.04px" class="cls_011"><span class="cls_011">130114</span></div>
+<div style="position:absolute;left:202.60px;top:538.04px" class="cls_011"><span class="cls_011">120953</span></div>
+<div style="position:absolute;left:296.19px;top:538.04px" class="cls_011"><span class="cls_011">52405</span></div>
+<div style="position:absolute;left:43.50px;top:548.85px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:99.66px;top:548.85px" class="cls_011"><span class="cls_011">Film-Noir</span></div>
+<div style="position:absolute;left:179.21px;top:548.85px" class="cls_011"><span class="cls_011">Documentary</span></div>
+<div style="position:absolute;left:300.87px;top:548.85px" class="cls_011"><span class="cls_011">IMAX</span></div>
+<div style="position:absolute;left:43.50px;top:559.65px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:118.38px;top:559.65px" class="cls_011"><span class="cls_011">33373</span></div>
+<div style="position:absolute;left:207.28px;top:559.65px" class="cls_011"><span class="cls_011">25368</span></div>
+<div style="position:absolute;left:300.87px;top:559.65px" class="cls_011"><span class="cls_011">2104</span></div>
+<div style="position:absolute;left:43.50px;top:570.45px" class="cls_011"><span class="cls_011">## (no genres listed)</span></div>
+<div style="position:absolute;left:43.50px;top:581.25px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:137.09px;top:581.25px" class="cls_011"><span class="cls_011">2</span></div>
+<div style="position:absolute;left:37.50px;top:608.86px" class="cls_014"><span class="cls_014">10 Most Frequent Genres</span></div>
+<div style="position:absolute;left:37.50px;top:632.87px" class="cls_004"><span class="cls_004">Which genres people rate most often? Let’s take a look the 10 most popular genres after the aforementioned genre merge.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5112px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background07.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.50px;top:326.78px" class="cls_014"><span class="cls_014">Ratings by Genre</span></div>
+<div style="position:absolute;left:37.50px;top:350.79px" class="cls_004"><span class="cls_004">Does popularity come with high ratings? We will create a plot where genres are in the same order, but this time we count their average</span></div>
+<div style="position:absolute;left:37.50px;top:362.79px" class="cls_004"><span class="cls_004">rating.</span></div>
+<div style="position:absolute;left:37.50px;top:674.88px" class="cls_004"><span class="cls_004">We can’t spot a pattern here. Popularity has not much to do with the average rating.</span></div>
+<div style="position:absolute;left:37.50px;top:692.89px" class="cls_004"><span class="cls_004">To further examine it, we will also make a violinplot to take a look at the distribution of ratings for each genre. This way it can become more</span></div>
+<div style="position:absolute;left:37.50px;top:704.89px" class="cls_004"><span class="cls_004">clear which values shaped these means.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5964px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background08.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.50px;top:323.18px" class="cls_004"><span class="cls_004">Distributions of ratings along genres look pretty identical. This comes of no surprise since means were not much different. In addition, all</span></div>
+<div style="position:absolute;left:37.50px;top:335.19px" class="cls_004"><span class="cls_004">genres contain both good and bad movies, hence the wide distribution.</span></div>
+<div style="position:absolute;left:37.50px;top:353.19px" class="cls_004"><span class="cls_004">As a result, it looks like genre alone is not an efficient predictor. To know the genre of a movie seems insufficient to predict its rating.</span></div>
+<div style="position:absolute;left:37.50px;top:371.20px" class="cls_004"><span class="cls_004">Perhaps genres need to be examined along with the user who places the rating. To investigate it, we will employ a lollipop plot to make</span></div>
+<div style="position:absolute;left:37.50px;top:383.20px" class="cls_004"><span class="cls_004">clear whether mean ratings per genre vary by userId.</span></div>
+<div style="position:absolute;left:37.50px;top:401.20px" class="cls_004"><span class="cls_004">Because genres are far too many to form informative plots we will keep the top 6 by number of ratings. The same will apply to users.</span></div>
+<div style="position:absolute;left:37.50px;top:713.29px" class="cls_004"><span class="cls_004">Pretty enlightening! No user has a balance in their preferences. Some love comedy, others like action, etc. That’s a strong hindsight for the</span></div>
+<div style="position:absolute;left:37.50px;top:725.29px" class="cls_004"><span class="cls_004">presence of hidden “concepts” in our data.</span></div>
+<div style="position:absolute;left:37.50px;top:743.30px" class="cls_004"><span class="cls_004">We will deploy this insight later by applying SVD in an effort to unravel such latent factors.</span></div>
+<div style="position:absolute;left:37.50px;top:764.91px" class="cls_006"><span class="cls_006">Time</span></div>
+<div style="position:absolute;left:37.50px;top:793.11px" class="cls_004"><span class="cls_004">Is time an effective predictor of rating? Does it matter when a movie is released or rated? Let’s explore accordingly.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:6816px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background09.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.50px;top:27.30px" class="cls_014"><span class="cls_014">Of Release</span></div>
+<div style="position:absolute;left:37.50px;top:51.31px" class="cls_004"><span class="cls_004">To earn a hindsight about the release date, let’s visualize the mean rating of each year</span></div>
+<div style="position:absolute;left:37.50px;top:363.39px" class="cls_004"><span class="cls_004">As expected, no apparent pattern.</span></div>
+<div style="position:absolute;left:37.50px;top:385.00px" class="cls_014"><span class="cls_014">Of Rating</span></div>
+<div style="position:absolute;left:37.50px;top:703.09px" class="cls_004"><span class="cls_004">Again, no apparent pattern. Seems like the time variable is not so valuable to us and it does not qualify for the modelling section.</span></div>
+<div style="position:absolute;left:37.50px;top:724.09px" class="cls_003"><span class="cls_003">Modelling</span></div>
+<div style="position:absolute;left:37.50px;top:755.30px" class="cls_004"><span class="cls_004">The time has come to start creating our predictive algorithm.</span></div>
+<div style="position:absolute;left:37.50px;top:773.31px" class="cls_004"><span class="cls_004">Because data is vast, regression models will take forever to train. As an alternative, we will construct a similar formula logically step-by-step.</span></div>
+<div style="position:absolute;left:37.50px;top:791.31px" class="cls_004"><span class="cls_004">For that, we will make use of only 3 columns: </span><span class="cls_008">userID</span><span class="cls_004">, </span><span class="cls_008">movieId</span><span class="cls_004"> and </span><span class="cls_008">ratin</span><span class="cls_004"> .</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:7668px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background10.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:33.90px" class="cls_011"><span class="cls_011">movielens &lt;- movielens %>% select( c(movieId,userId,rating) )</span></div>
+<div style="position:absolute;left:37.50px;top:61.51px" class="cls_006"><span class="cls_006">Train/Test Split</span></div>
+<div style="position:absolute;left:37.50px;top:89.72px" class="cls_004"><span class="cls_004">The RMSE of our model will calculated on the validation set. To avoid overfitting, we will not use it to optimize our model’s parameters.</span></div>
+<div style="position:absolute;left:37.50px;top:101.72px" class="cls_004"><span class="cls_004">Instead, we will split the initial train set to create a test set out of it that will help us optimize.</span></div>
+<div style="position:absolute;left:37.50px;top:123.33px" class="cls_014"><span class="cls_014">Train / Validation Split</span></div>
+<div style="position:absolute;left:37.50px;top:147.33px" class="cls_004"><span class="cls_004">We will perform a 90/10 split. However, the split is not enough. We need to make sure that all users and movies contained in test set exist in</span></div>
+<div style="position:absolute;left:37.50px;top:159.34px" class="cls_004"><span class="cls_004">the train set as well. Otherwise, our algorithm will be unable to predict a rating and will return an N/A.</span></div>
+<div style="position:absolute;left:37.50px;top:177.34px" class="cls_004"><span class="cls_004">As a result, we need to remove some rows from test set. However, we will not let these rows get wasted. We will add them in the train set</span></div>
+<div style="position:absolute;left:37.50px;top:189.34px" class="cls_004"><span class="cls_004">instead. Even though they won’t be directly deployed, they will contribute to the unravelling of concepts.</span></div>
+<div style="position:absolute;left:37.50px;top:207.35px" class="cls_004"><span class="cls_004">To make this clear we will use an extremely simplified example. Suppose all rows intended for removal were thrillers. Users keen on thrillers</span></div>
+<div style="position:absolute;left:37.50px;top:219.35px" class="cls_004"><span class="cls_004">would have given high ratings to these, while others with a preference to romance would have rated them low. This set of movies would</span></div>
+<div style="position:absolute;left:37.50px;top:231.36px" class="cls_004"><span class="cls_004">greatly contribute to the latent factor responding to the thriller genre and would have helped our algorithm to subtly categorize each user’s</span></div>
+<div style="position:absolute;left:37.50px;top:243.36px" class="cls_004"><span class="cls_004">preference on it.</span></div>
+<div style="position:absolute;left:43.50px;top:266.17px" class="cls_011"><span class="cls_011">set.seed(</span><span class="cls_013">1</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:276.97px" class="cls_009"><span class="cls_009"># if using R 3.5 or earlier, use `set.seed(1)` instead</span></div>
+<div style="position:absolute;left:43.50px;top:287.77px" class="cls_011"><span class="cls_011">test_index &lt;- createDataPartition(y = movielens$rating, times = </span><span class="cls_013">1</span><span class="cls_011">, p = </span><span class="cls_013">0.1</span><span class="cls_011">, list = </span><span class="cls_015">FALSE</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:298.58px" class="cls_011"><span class="cls_011">edx &lt;- movielens[-test_index,]</span></div>
+<div style="position:absolute;left:43.50px;top:309.38px" class="cls_011"><span class="cls_011">temp &lt;- movielens[test_index,]</span></div>
+<div style="position:absolute;left:43.50px;top:330.98px" class="cls_011"><span class="cls_011">validation &lt;- temp %>%</span></div>
+<div style="position:absolute;left:66.90px;top:341.79px" class="cls_011"><span class="cls_011">semi_join(edx, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:66.90px;top:352.59px" class="cls_011"><span class="cls_011">semi_join(edx, by = </span><span class="cls_012">"userId"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:374.20px" class="cls_009"><span class="cls_009"># Add rows removed from validation set back into edx set</span></div>
+<div style="position:absolute;left:43.50px;top:395.80px" class="cls_011"><span class="cls_011">removed &lt;- anti_join(temp, validation)</span></div>
+<div style="position:absolute;left:43.50px;top:406.61px" class="cls_011"><span class="cls_011">edx &lt;- rbind(edx, removed)</span></div>
+<div style="position:absolute;left:43.50px;top:428.21px" class="cls_011"><span class="cls_011">mu &lt;- mean(edx$rating)</span></div>
+<div style="position:absolute;left:43.50px;top:449.82px" class="cls_011"><span class="cls_011">rm(test_index, temp, movielens, removed)</span></div>
+<div style="position:absolute;left:37.50px;top:477.43px" class="cls_014"><span class="cls_014">Train / Test Split</span></div>
+<div style="position:absolute;left:37.50px;top:501.43px" class="cls_004"><span class="cls_004">As said above, in order to optimize without using the validation set, we will conduct an 80/20 split on the existing train set. For speed of</span></div>
+<div style="position:absolute;left:37.50px;top:513.44px" class="cls_004"><span class="cls_004">computation, we won’t split the whole train set, but 200,000 rows of it.</span></div>
+<div style="position:absolute;left:43.50px;top:536.24px" class="cls_011"><span class="cls_011">set.seed(</span><span class="cls_013">1</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:547.04px" class="cls_009"><span class="cls_009"># if using R 3.5 or earlier, use `set.seed(1)` instead</span></div>
+<div style="position:absolute;left:43.50px;top:568.65px" class="cls_011"><span class="cls_011">test_index &lt;- createDataPartition(y = edx$rating, times = </span><span class="cls_013">1</span><span class="cls_011">, p = </span><span class="cls_013">0.8</span><span class="cls_011">, list = </span><span class="cls_015">FALSE</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:579.45px" class="cls_011"><span class="cls_011">train_set &lt;- edx[-test_index,]</span></div>
+<div style="position:absolute;left:43.50px;top:590.26px" class="cls_011"><span class="cls_011">temp &lt;- edx[test_index,]</span></div>
+<div style="position:absolute;left:43.50px;top:611.86px" class="cls_011"><span class="cls_011">test_set &lt;- temp %>%</span></div>
+<div style="position:absolute;left:66.90px;top:622.67px" class="cls_011"><span class="cls_011">semi_join(train_set, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:66.90px;top:633.47px" class="cls_011"><span class="cls_011">semi_join(train_set, by = </span><span class="cls_012">"userId"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:655.07px" class="cls_009"><span class="cls_009"># Add rows removed from test set back into train set</span></div>
+<div style="position:absolute;left:43.50px;top:676.68px" class="cls_011"><span class="cls_011">removed &lt;- anti_join(temp, test_set)</span></div>
+<div style="position:absolute;left:43.50px;top:687.48px" class="cls_011"><span class="cls_011">train_set &lt;- rbind(train_set, removed)</span></div>
+<div style="position:absolute;left:43.50px;top:709.09px" class="cls_011"><span class="cls_011">rm(test_index, temp, removed)</span></div>
+<div style="position:absolute;left:37.50px;top:736.70px" class="cls_006"><span class="cls_006">User and Movie Bias</span></div>
+<div style="position:absolute;left:37.50px;top:764.91px" class="cls_004"><span class="cls_004">Now we need to compute each movie’s and user’s bias. In order to control for the number of ratings, we need to penalize by term</span></div>
+<div style="position:absolute;left:37.50px;top:776.91px" class="cls_004"><span class="cls_004">commonly referred to as lambda. To find the optimal lambda, we create a function that lets us that takes as input our dataframe and a</span></div>
+<div style="position:absolute;left:37.50px;top:788.91px" class="cls_004"><span class="cls_004">vector of possible lambdas, computes the RMSE each lambda returned and outputs the lambda that yields the lowest rmse.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:8520px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background11.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:33.90px" class="cls_011"><span class="cls_011">l_optimizer &lt;- </span><span class="cls_010">function</span><span class="cls_011">(train_set, lambdas){</span></div>
+<div style="position:absolute;left:62.22px;top:55.51px" class="cls_011"><span class="cls_011">rmses &lt;- sapply(lambdas, </span><span class="cls_010">function</span><span class="cls_011">(l){</span></div>
+<div style="position:absolute;left:80.71px;top:77.11px" class="cls_009"><span class="cls_009">#Calculate movie bias</span></div>
+<div style="position:absolute;left:80.94px;top:87.92px" class="cls_011"><span class="cls_011">b_i &lt;- train_set %>%</span></div>
+<div style="position:absolute;left:90.30px;top:98.72px" class="cls_011"><span class="cls_011">group_by(movieId) %>%</span></div>
+<div style="position:absolute;left:90.30px;top:109.52px" class="cls_011"><span class="cls_011">summarize(b_i = sum(rating - mu)/(n()+l))</span></div>
+<div style="position:absolute;left:80.71px;top:131.13px" class="cls_009"><span class="cls_009">#Calculate user bias</span></div>
+<div style="position:absolute;left:80.94px;top:141.93px" class="cls_011"><span class="cls_011">b_u &lt;- train_set %>%</span></div>
+<div style="position:absolute;left:90.30px;top:152.73px" class="cls_011"><span class="cls_011">left_join(b_i, by=</span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:90.30px;top:163.54px" class="cls_011"><span class="cls_011">group_by(userId) %>%</span></div>
+<div style="position:absolute;left:90.30px;top:174.34px" class="cls_011"><span class="cls_011">summarize(b_u = sum(rating - b_i - mu)/(n()+l))</span></div>
+<div style="position:absolute;left:80.71px;top:195.95px" class="cls_009"><span class="cls_009">#Predict ratings</span></div>
+<div style="position:absolute;left:80.94px;top:206.75px" class="cls_011"><span class="cls_011">predicted_ratings &lt;- test_set %>%</span></div>
+<div style="position:absolute;left:99.66px;top:217.55px" class="cls_011"><span class="cls_011">left_join(b_i, by=</span><span class="cls_012">'movieId'</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:99.66px;top:228.36px" class="cls_011"><span class="cls_011">left_join(b_u, by = </span><span class="cls_012">"userId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:99.66px;top:239.16px" class="cls_011"><span class="cls_011">mutate(pred = mu + b_i + b_u) %>%</span></div>
+<div style="position:absolute;left:99.66px;top:249.96px" class="cls_011"><span class="cls_011">pull(pred)</span></div>
+<div style="position:absolute;left:80.71px;top:271.57px" class="cls_009"><span class="cls_009">#Calculate the error for the specific lambda</span></div>
+<div style="position:absolute;left:80.71px;top:282.37px" class="cls_010"><span class="cls_010">return</span><span class="cls_011">(RMSE(predicted_ratings, test_set$rating))</span></div>
+<div style="position:absolute;left:62.22px;top:293.17px" class="cls_011"><span class="cls_011">})</span></div>
+<div style="position:absolute;left:48.31px;top:314.78px" class="cls_010"><span class="cls_010">return</span><span class="cls_011">(lambdas[which.min(rmses)])</span></div>
+<div style="position:absolute;left:43.50px;top:325.58px" class="cls_011"><span class="cls_011">}</span></div>
+<div style="position:absolute;left:43.50px;top:354.39px" class="cls_011"><span class="cls_011">## [1] "Optimal Lambda : 4"</span></div>
+<div style="position:absolute;left:37.50px;top:378.40px" class="cls_004"><span class="cls_004">Now that we know the optimal lambda, we will go on to create the biases that will lead us to the residuals we seek to decompose.</span></div>
+<div style="position:absolute;left:43.50px;top:401.20px" class="cls_009"><span class="cls_009">#Calculate movie bias</span></div>
+<div style="position:absolute;left:43.50px;top:412.01px" class="cls_011"><span class="cls_011">b_i &lt;- edx %>%</span></div>
+<div style="position:absolute;left:52.86px;top:422.81px" class="cls_011"><span class="cls_011">group_by(movieId) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:433.61px" class="cls_011"><span class="cls_011">summarize(b_i = sum(rating - mu)/(n()+lambda))</span></div>
+<div style="position:absolute;left:43.50px;top:455.22px" class="cls_009"><span class="cls_009">#Calculate user bias</span></div>
+<div style="position:absolute;left:43.50px;top:466.02px" class="cls_011"><span class="cls_011">b_u &lt;- edx %>%</span></div>
+<div style="position:absolute;left:52.86px;top:476.83px" class="cls_011"><span class="cls_011">left_join(b_i, by=</span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:487.63px" class="cls_011"><span class="cls_011">group_by(userId) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:498.43px" class="cls_011"><span class="cls_011">summarize(b_u = sum(rating - b_i - mu)/(n()+lambda))</span></div>
+<div style="position:absolute;left:37.50px;top:526.04px" class="cls_006"><span class="cls_006">Residuals</span></div>
+<div style="position:absolute;left:37.50px;top:554.25px" class="cls_004"><span class="cls_004">Now that we obtained the regularized user and movie biases, we need to calculate what is left unexplained, ie the residual values. In other</span></div>
+<div style="position:absolute;left:37.50px;top:566.25px" class="cls_004"><span class="cls_004">words, we need to compute all differences between actual ratings and our predictions so that we can further analyze these differences.</span></div>
+<div style="position:absolute;left:43.50px;top:589.06px" class="cls_009"><span class="cls_009">#Function to calculate the residuals</span></div>
+<div style="position:absolute;left:43.50px;top:610.66px" class="cls_011"><span class="cls_011">resids &lt;- </span><span class="cls_010">function</span><span class="cls_011">( train_set = train_set, mu = mu ){</span></div>
+<div style="position:absolute;left:53.11px;top:632.27px" class="cls_009"><span class="cls_009">#This function takes training set, calculates the residuals left after subtracting mu, user and movie bias</span></div>
+<div style="position:absolute;left:53.11px;top:643.07px" class="cls_009"><span class="cls_009">#from actual rating and transforms it into a sparse matrix with movieIds as columns and users as row</span></div>
+<div style="position:absolute;left:52.86px;top:664.68px" class="cls_011"><span class="cls_011">df &lt;- train_set %>%</span></div>
+<div style="position:absolute;left:94.98px;top:675.48px" class="cls_011"><span class="cls_011">left_join(b_i, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:686.28px" class="cls_011"><span class="cls_011">left_join(b_u, by = </span><span class="cls_012">"userId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:697.09px" class="cls_011"><span class="cls_011">mutate(res = rating - (mu + b_i + b_u) ) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:707.89px" class="cls_011"><span class="cls_011">select(userId, movieId, res) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:718.69px" class="cls_011"><span class="cls_011">spread( movieId, res ) %>% as.data.frame()</span></div>
+<div style="position:absolute;left:53.11px;top:740.30px" class="cls_009"><span class="cls_009">#Name the rows</span></div>
+<div style="position:absolute;left:52.86px;top:751.10px" class="cls_011"><span class="cls_011">rownames(df)&lt;- df[,</span><span class="cls_013">1</span><span class="cls_011">]</span></div>
+<div style="position:absolute;left:52.86px;top:761.90px" class="cls_011"><span class="cls_011">df &lt;- df[,-</span><span class="cls_013">1</span><span class="cls_011">]</span></div>
+<div style="position:absolute;left:43.50px;top:772.71px" class="cls_011"><span class="cls_011">}</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:9372px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background12.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.50px;top:27.30px" class="cls_006"><span class="cls_006">SVD</span></div>
+<div style="position:absolute;left:37.50px;top:55.51px" class="cls_004"><span class="cls_004">Now that we have the matrix of residuals, we de compose it in the best possible way. For that reason we will use the funkSVD function from</span></div>
+<div style="position:absolute;left:37.50px;top:67.51px" class="cls_004"><span class="cls_004">the recommenderlab package. As its name suggests, it is not the tradiotional SVD. It uses a slightly different method, decomposing the</span></div>
+<div style="position:absolute;left:37.50px;top:79.51px" class="cls_004"><span class="cls_004">initial matrix into two (and not three) matrices containing the latent factors for users and movies that minimize a specific objective function.</span></div>
+<div style="position:absolute;left:37.50px;top:91.52px" class="cls_004"><span class="cls_004">For more details, refer [here](</span><A HREF="https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)">https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)</A> </span><span class="cls_004">.</span></div>
+<div style="position:absolute;left:37.50px;top:109.52px" class="cls_004"><span class="cls_004">Because it contains many parameters, we will build a function that optimizes some of them. These parameters include: Q train set (named tr)</span></div>
+<div style="position:absolute;left:37.50px;top:121.53px" class="cls_004"><span class="cls_004">: the train set matrix of residuals. It will get split in in an 80/20 to create a test set out of it that will help us estimate the final RMSE Q test set</span></div>
+<div style="position:absolute;left:37.50px;top:133.53px" class="cls_004"><span class="cls_004">(named validation) : test set on which we want to predict Q ks : number of features, or ranks of the approximation. In other words, how many</span></div>
+<div style="position:absolute;left:37.50px;top:145.53px" class="cls_004"><span class="cls_004">“concepts” do we seek to unravel. A variable with high computational cost. Q gammas : regularization term Q lambdas : the rate by which we</span></div>
+<div style="position:absolute;left:37.50px;top:157.54px" class="cls_004"><span class="cls_004">update our weights after each iteration. A low lambda can make our algorithm train for days, while a high one can lead us to miss the</span></div>
+<div style="position:absolute;left:37.50px;top:169.54px" class="cls_004"><span class="cls_004">optimal weights. Q min_improvement : the minimum amount of improvement derived from our objective that can be considered as</span></div>
+<div style="position:absolute;left:37.50px;top:181.54px" class="cls_004"><span class="cls_004">improvement Q min_epochs : minimum number of iterations per feature</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:10224px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background13.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:33.90px" class="cls_011"><span class="cls_011">optimizer &lt;- </span><span class="cls_010">function</span><span class="cls_011">(tr = tr,</span></div>
+<div style="position:absolute;left:146.45px;top:44.70px" class="cls_011"><span class="cls_011">test_set = test_set,</span></div>
+<div style="position:absolute;left:146.45px;top:55.51px" class="cls_011"><span class="cls_011">ks,gammas,lambdas,min_epochs, min_improvements){</span></div>
+<div style="position:absolute;left:53.11px;top:77.11px" class="cls_009"><span class="cls_009">#Inputs: parameters of funkSVD function</span></div>
+<div style="position:absolute;left:52.86px;top:87.92px" class="cls_011"><span class="cls_011">d</span></div>
+<div style="position:absolute;left:62.22px;top:87.92px" class="cls_011"><span class="cls_011">&lt;-</span></div>
+<div style="position:absolute;left:76.26px;top:87.92px" class="cls_011"><span class="cls_011">data.frame(k = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:98.72px" class="cls_011"><span class="cls_011">gamma = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:109.52px" class="cls_011"><span class="cls_011">lambda = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:120.33px" class="cls_011"><span class="cls_011">min_epochs = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:131.13px" class="cls_011"><span class="cls_011">min_improvement = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:141.93px" class="cls_011"><span class="cls_011">rmse = </span><span class="cls_015">NULL</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:80.71px;top:163.54px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (k </span><span class="cls_010">in</span><span class="cls_011"> ks){</span></div>
+<div style="position:absolute;left:80.71px;top:174.34px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (g </span><span class="cls_010">in</span><span class="cls_011"> gammas){</span></div>
+<div style="position:absolute;left:80.71px;top:185.14px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (l </span><span class="cls_010">in</span><span class="cls_011"> lambdas){</span></div>
+<div style="position:absolute;left:80.71px;top:195.95px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (e </span><span class="cls_010">in</span><span class="cls_011"> min_epochs){</span></div>
+<div style="position:absolute;left:80.71px;top:206.75px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (imp </span><span class="cls_010">in</span><span class="cls_011"> min_improvements) {</span></div>
+<div style="position:absolute;left:90.32px;top:228.36px" class="cls_009"><span class="cls_009">#decompose residuals with funk SVD</span></div>
+<div style="position:absolute;left:90.30px;top:239.16px" class="cls_011"><span class="cls_011">a &lt;- funkSVD(tr,</span></div>
+<div style="position:absolute;left:151.13px;top:249.96px" class="cls_011"><span class="cls_011">k = k,</span></div>
+<div style="position:absolute;left:151.13px;top:260.76px" class="cls_011"><span class="cls_011">gamma = g,</span></div>
+<div style="position:absolute;left:151.13px;top:271.57px" class="cls_011"><span class="cls_011">lambda = l,</span></div>
+<div style="position:absolute;left:151.13px;top:282.37px" class="cls_011"><span class="cls_011">min_epochs = e,</span></div>
+<div style="position:absolute;left:151.13px;top:293.17px" class="cls_011"><span class="cls_011">max_epochs = </span><span class="cls_013">200</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:151.13px;top:303.98px" class="cls_011"><span class="cls_011">min_improvement = imp,</span></div>
+<div style="position:absolute;left:151.13px;top:314.78px" class="cls_011"><span class="cls_011">verbose = </span><span class="cls_015">TRUE</span><span class="cls_011"> )</span></div>
+<div style="position:absolute;left:95.12px;top:336.39px" class="cls_009"><span class="cls_009">#recompose them (returns a full matrix in place of the sparse tr)</span></div>
+<div style="position:absolute;left:94.98px;top:347.19px" class="cls_011"><span class="cls_011">r &lt;- tcrossprod(a$U, a$V)</span></div>
+<div style="position:absolute;left:95.12px;top:368.79px" class="cls_009"><span class="cls_009">#pass the original colnames to the new matrix</span></div>
+<div style="position:absolute;left:94.98px;top:379.60px" class="cls_011"><span class="cls_011">colnames(r) &lt;- colnames(tr)</span></div>
+<div style="position:absolute;left:95.12px;top:401.20px" class="cls_009"><span class="cls_009">#create a new vector (called re) on test set</span></div>
+<div style="position:absolute;left:95.12px;top:412.01px" class="cls_009"><span class="cls_009">#containing the appropriate p * q (recomposed) term</span></div>
+<div style="position:absolute;left:94.98px;top:422.81px" class="cls_011"><span class="cls_011">test_set$re &lt;- seq(</span><span class="cls_013">0</span><span class="cls_011">,nrow(test_set)-</span><span class="cls_013">1</span><span class="cls_011">) </span><span class="cls_009">#to-be-filled vector of zeros</span></div>
+<div style="position:absolute;left:95.12px;top:444.42px" class="cls_009"><span class="cls_009">#for each row of test set</span></div>
+<div style="position:absolute;left:95.12px;top:455.22px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (i </span><span class="cls_010">in</span><span class="cls_011"> </span><span class="cls_013">1</span><span class="cls_011">:nrow(test_set)){</span></div>
+<div style="position:absolute;left:108.92px;top:476.83px" class="cls_009"><span class="cls_009">#fill the vector of zeros with the proper calculated p*q quantity</span></div>
+<div style="position:absolute;left:109.02px;top:487.63px" class="cls_011"><span class="cls_011">test_set$re[i] &lt;-  r[ test_set$userId[i] , which(test_set$movieId[i] == colnames(r)) ]</span></div>
+<div style="position:absolute;left:118.38px;top:509.23px" class="cls_011"><span class="cls_011">}</span></div>
+<div style="position:absolute;left:108.92px;top:530.84px" class="cls_009"><span class="cls_009">#calculate our prediction</span></div>
+<div style="position:absolute;left:109.02px;top:541.64px" class="cls_011"><span class="cls_011">tes &lt;- test_set %>%</span></div>
+<div style="position:absolute;left:109.02px;top:552.45px" class="cls_011"><span class="cls_011">left_join(b_i, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>% </span><span class="cls_009">#bring the movie bias</span></div>
+<div style="position:absolute;left:109.02px;top:563.25px" class="cls_011"><span class="cls_011">left_join(b_u, by = </span><span class="cls_012">"userId"</span><span class="cls_011">) %>% </span><span class="cls_009">#bring the user bias</span></div>
+<div style="position:absolute;left:109.02px;top:574.05px" class="cls_011"><span class="cls_011">mutate(pred = mu + b_i + b_u + re) </span><span class="cls_009"># calculate our prediction</span></div>
+<div style="position:absolute;left:108.92px;top:595.66px" class="cls_009"><span class="cls_009">#store results in a data frame</span></div>
+<div style="position:absolute;left:109.02px;top:606.46px" class="cls_011"><span class="cls_011">d &lt;- d %>% rbind(data.frame(k = k, gamma = g, lambda = l,</span></div>
+<div style="position:absolute;left:240.04px;top:617.26px" class="cls_011"><span class="cls_011">min_epochs = e, min_improvement = imp,</span></div>
+<div style="position:absolute;left:240.04px;top:628.07px" class="cls_011"><span class="cls_011">rmse = ModelMetrics::rmse(tes$rating, tes$pred) ) )</span></div>
+<div style="position:absolute;left:109.02px;top:649.67px" class="cls_011"><span class="cls_011">}}}}}</span></div>
+<div style="position:absolute;left:53.11px;top:671.28px" class="cls_010"><span class="cls_010">return</span><span class="cls_011">(d)</span></div>
+<div style="position:absolute;left:43.50px;top:682.08px" class="cls_011"><span class="cls_011">}</span></div>
+<div style="position:absolute;left:37.50px;top:706.09px" class="cls_004"><span class="cls_004">Now that we defined our function, we also define the parameters we want to experiment with.</span></div>
+<div style="position:absolute;left:37.50px;top:724.09px" class="cls_004"><span class="cls_004">For ease of computations, we won’t use the optimizer in knitting. I’ve run the optimization process several times with smaller datasets. In</span></div>
+<div style="position:absolute;left:37.50px;top:736.10px" class="cls_004"><span class="cls_004">case you want to further optimize them, re-run the script with you own preferences.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11076px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background14.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:33.90px" class="cls_009"><span class="cls_009">#Define the parameters</span></div>
+<div style="position:absolute;left:43.50px;top:44.70px" class="cls_011"><span class="cls_011">ks &lt;- c(</span><span class="cls_013">1</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:55.51px" class="cls_011"><span class="cls_011">gammas &lt;-  c(</span><span class="cls_013">.009</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:66.31px" class="cls_011"><span class="cls_011">lambdas &lt;- c(</span><span class="cls_013">.005</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:77.11px" class="cls_011"><span class="cls_011">min_epochs &lt;- c(</span><span class="cls_013">5</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:87.92px" class="cls_011"><span class="cls_011">min_improvements &lt;- c(</span><span class="cls_013">.001</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:37.50px;top:114.92px" class="cls_003"><span class="cls_003">Results</span></div>
+<div style="position:absolute;left:37.50px;top:146.13px" class="cls_004"><span class="cls_004">Then, we</span></div>
+<div style="position:absolute;left:61.51px;top:164.14px" class="cls_004"><span class="cls_004">run our optimizer,</span></div>
+<div style="position:absolute;left:61.51px;top:182.14px" class="cls_004"><span class="cls_004">store optimizer results in dataframe</span></div>
+<div style="position:absolute;left:61.51px;top:200.15px" class="cls_004"><span class="cls_004">look at the optimal parameters that gave the minimum RMSE.</span></div>
+<div style="position:absolute;left:43.50px;top:222.95px" class="cls_011"><span class="cls_011">## [1] "Optimal Parameters : "</span></div>
+<div style="position:absolute;left:43.50px;top:251.76px" class="cls_011"><span class="cls_011">## [1] 1.000 0.009 0.005 5.000 0.001</span></div>
+<div style="position:absolute;left:37.50px;top:275.77px" class="cls_004"><span class="cls_004">The optimizer function can also be used to predict on the validation set. We will re-run it, but this time with:</span></div>
+<div style="position:absolute;left:61.51px;top:293.77px" class="cls_004"><span class="cls_004">edx as train test, (after we pass it from the function that returns the residuals)</span></div>
+<div style="position:absolute;left:61.51px;top:305.78px" class="cls_004"><span class="cls_004">validation as test_set</span></div>
+<div style="position:absolute;left:61.51px;top:317.78px" class="cls_004"><span class="cls_004">the rest of (optimal) parameters from the data frame we created above</span></div>
+<div style="position:absolute;left:43.50px;top:340.59px" class="cls_009"><span class="cls_009">#subtract the mean, movie and user biases</span></div>
+<div style="position:absolute;left:43.50px;top:351.39px" class="cls_011"><span class="cls_011">tr &lt;- resids(train_set = edx, mu=mu)</span></div>
+<div style="position:absolute;left:43.50px;top:373.00px" class="cls_011"><span class="cls_011">final_RMSE &lt;- optimizer( tr =  tr,</span></div>
+<div style="position:absolute;left:160.49px;top:383.80px" class="cls_011"><span class="cls_011">test_set = validation,</span></div>
+<div style="position:absolute;left:160.49px;top:394.60px" class="cls_011"><span class="cls_011">ks = opt_params[</span><span class="cls_013">1</span><span class="cls_011">],</span></div>
+<div style="position:absolute;left:160.49px;top:405.41px" class="cls_011"><span class="cls_011">gammas = opt_params[</span><span class="cls_013">2</span><span class="cls_011">],</span></div>
+<div style="position:absolute;left:160.49px;top:416.21px" class="cls_011"><span class="cls_011">lambdas = opt_params[</span><span class="cls_013">3</span><span class="cls_011">],</span></div>
+<div style="position:absolute;left:160.49px;top:427.01px" class="cls_011"><span class="cls_011">min_epochs = opt_params[</span><span class="cls_013">4</span><span class="cls_011">],</span></div>
+<div style="position:absolute;left:160.49px;top:437.81px" class="cls_011"><span class="cls_011">min_improvements = opt_params[</span><span class="cls_013">5</span><span class="cls_011">])</span></div>
+<div style="position:absolute;left:43.50px;top:466.62px" class="cls_011"><span class="cls_011">##</span></div>
+<div style="position:absolute;left:43.50px;top:477.43px" class="cls_011"><span class="cls_011">## Training feature: 1 / 1 :</span></div>
+<div style="position:absolute;left:43.50px;top:488.23px" class="cls_011"><span class="cls_011">## -></span></div>
+<div style="position:absolute;left:76.26px;top:488.23px" class="cls_011"><span class="cls_011">5 epochs - final improvement was 8.461297e-05</span></div>
+<div style="position:absolute;left:43.50px;top:517.04px" class="cls_011"><span class="cls_011">print(</span><span class="cls_012">"Final RMSE:"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:545.84px" class="cls_011"><span class="cls_011">## [1] "Final RMSE:"</span></div>
+<div style="position:absolute;left:43.50px;top:574.65px" class="cls_011"><span class="cls_011">final_RMSE$rmse %>% print()</span></div>
+<div style="position:absolute;left:43.50px;top:603.46px" class="cls_011"><span class="cls_011">## [1] 0.8655681</span></div>
+<div style="position:absolute;left:37.50px;top:627.47px" class="cls_004"><span class="cls_004">As you can see, torturing data enough gave us an RMSE of 0.8655681.</span></div>
+<div style="position:absolute;left:37.50px;top:648.47px" class="cls_003"><span class="cls_003">Conclusion</span></div>
+<div style="position:absolute;left:37.50px;top:679.68px" class="cls_004"><span class="cls_004">Throughtout this report, we tried to explore movie ratings under different spectrums in order to come up with an efficient and computationally</span></div>
+<div style="position:absolute;left:37.50px;top:691.68px" class="cls_004"><span class="cls_004">affordable movie recommender.</span></div>
+<div style="position:absolute;left:37.50px;top:709.69px" class="cls_004"><span class="cls_004">At first,we took a brief look at their </span><span class="cls_007">distribution</span><span class="cls_004"> and noticed a tendency towards </span><span class="cls_007">high ratings</span><span class="cls_004">, since both mean and median rating were</span></div>
+<div style="position:absolute;left:37.50px;top:721.69px" class="cls_004"><span class="cls_004">over 2.5.</span></div>
+<div style="position:absolute;left:37.50px;top:739.70px" class="cls_004"><span class="cls_004">Then, we visualised the mean rating in correlation with the number of ratings both for movies and for users. Despite users showed a</span></div>
+<div style="position:absolute;left:37.50px;top:751.70px" class="cls_004"><span class="cls_004">randomly scattered plot, movies exhibited a slight positive tendency. That led us to explore the </span><span class="cls_007">mean</span><span class="cls_004"> rating </span><span class="cls_007">in relation with the number of</span></div>
+<div style="position:absolute;left:37.50px;top:763.71px" class="cls_007"><span class="cls_007">ratings</span><span class="cls_004"> each movie had. This step made clear that we shouldn’t rely on the mean rating unless it was shaped by a safe number of ratings</span></div>
+<div style="position:absolute;left:37.50px;top:775.71px" class="cls_004"><span class="cls_004">and introduced us to the </span><span class="cls_007">need to regularize each movie’s mean rating</span><span class="cls_004">. The issue was tackled later with an optimization function that</span></div>
+<div style="position:absolute;left:37.50px;top:787.71px" class="cls_004"><span class="cls_004">detects the optimal regularization parameter.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11928px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background15.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.50px;top:29.10px" class="cls_004"><span class="cls_004">Then, we gravitated towards the </span><span class="cls_007">  enres</span><span class="cls_004"> column. After we brought it in a proper format, we started exploring the mean rating per genre in</span></div>
+<div style="position:absolute;left:37.50px;top:41.10px" class="cls_004"><span class="cls_004">relation with its popularity. Overall, genres didn’t appear so discriminating. They pretty much held the </span><span class="cls_007">same distribution of ratings</span><span class="cls_004"> and</span></div>
+<div style="position:absolute;left:37.50px;top:53.11px" class="cls_004"><span class="cls_004">their respective means were close with each other. But since we put them under the </span><span class="cls_007">perspective of user’s preference</span><span class="cls_004">, they suddenly</span></div>
+<div style="position:absolute;left:37.50px;top:65.11px" class="cls_004"><span class="cls_004">became insightful. It became clear that each user had a tendency to rate higher (lower) certain genres and preferences among users</span></div>
+<div style="position:absolute;left:37.50px;top:77.11px" class="cls_004"><span class="cls_004">varied. This indicated that genres contained valuable information. If we knew the preferences of a user and how much each movie belonged</span></div>
+<div style="position:absolute;left:37.50px;top:89.12px" class="cls_004"><span class="cls_004">to these preferences, we could embed these preferences in our model and substantially improve its predictive power. For that, we</span></div>
+<div style="position:absolute;left:37.50px;top:101.12px" class="cls_004"><span class="cls_004">employed the matrix factorization, which helped us abstractly unveil such preferences.</span></div>
+<div style="position:absolute;left:37.50px;top:119.13px" class="cls_004"><span class="cls_004">With all this hindsight, we started creating our model. After we regularized each movie and user mean rating (aka </span><span class="cls_007">bias</span><span class="cls_004">), we focused on</span></div>
+<div style="position:absolute;left:37.50px;top:131.13px" class="cls_004"><span class="cls_004">exploiting the residuals of this precocious model. For that, we employed the FunkSVD function, tuned by a subsplit of our original train set.</span></div>
+<div style="position:absolute;left:37.50px;top:143.13px" class="cls_004"><span class="cls_004">Finally, we plotted each RMSE obtained by each combination of parameters and chose the optimal to train our final model.</span></div>
+<div style="position:absolute;left:37.50px;top:161.14px" class="cls_004"><span class="cls_004">A short description of the results is embedded in the following plot.</span></div>
+<div style="position:absolute;left:37.50px;top:476.22px" class="cls_003"><span class="cls_003">Appendix (Code)</span></div>
+<div style="position:absolute;left:43.50px;top:512.23px" class="cls_009"><span class="cls_009">#Importing necessary libraries</span></div>
+<div style="position:absolute;left:43.50px;top:533.84px" class="cls_009"><span class="cls_009">#Data manipulation</span></div>
+<div style="position:absolute;left:43.50px;top:544.64px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(tidyverse)) install.packages(</span><span class="cls_012">"tidyverse"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:555.45px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:566.25px" class="cls_009"><span class="cls_009"># Train/Test split and Model Training</span></div>
+<div style="position:absolute;left:43.50px;top:577.05px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(caret)) install.packages(</span><span class="cls_012">"caret"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:216.64px;top:587.86px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:598.66px" class="cls_009"><span class="cls_009">#Handle Tables</span></div>
+<div style="position:absolute;left:43.50px;top:609.46px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(data.table)) install.packages(</span><span class="cls_012">"data.table"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:240.04px;top:620.27px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:631.07px" class="cls_009"><span class="cls_009">#SVD decomposition</span></div>
+<div style="position:absolute;left:43.50px;top:641.87px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(recommenderlab)) install.packages(</span><span class="cls_012">"recommenderlab"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:652.67px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:663.48px" class="cls_009"><span class="cls_009"># to plot multiple grobs alongside</span></div>
+<div style="position:absolute;left:43.50px;top:674.28px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(gridExtra)) install.packages(</span><span class="cls_012">"gridExtra"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:685.08px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:695.89px" class="cls_009"><span class="cls_009"># to separate stacked genres</span></div>
+<div style="position:absolute;left:43.50px;top:706.69px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(splitstackshape))install.packages(</span><span class="cls_012">"splitstackshape"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:717.49px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:728.30px" class="cls_009"><span class="cls_009">#to transform shape of our data</span></div>
+<div style="position:absolute;left:43.50px;top:739.10px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(reshape2)) install.packages(</span><span class="cls_012">"reshape2"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:235.36px;top:749.90px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:760.70px" class="cls_009"><span class="cls_009">#For rmse function</span></div>
+<div style="position:absolute;left:43.50px;top:771.51px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(!</span><span class="cls_010">require</span><span class="cls_011">(ModelMetrics))  install.packages(</span><span class="cls_012">"ModelMetrics"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:221.32px;top:782.31px" class="cls_011"><span class="cls_011">repos = </span><span class="cls_012">"<A HREF="http://cran.us.r-project.org"/">http://cran.us.r-project.org"</A> </span><span class="cls_011">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:12780px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background16.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:29.70px" class="cls_009"><span class="cls_009">#Data Import</span></div>
+<div style="position:absolute;left:43.50px;top:40.50px" class="cls_011"><span class="cls_011">dl &lt;- tempfile()</span></div>
+<div style="position:absolute;left:43.50px;top:51.31px" class="cls_011"><span class="cls_011">download.file(</span><span class="cls_012">"<A HREF="http://files.grouplens.org/datasets/movielens/ml-10m.zip"/">http://files.grouplens.org/datasets/movielens/ml-10m.zip"</A> </span><span class="cls_011">, dl)</span></div>
+<div style="position:absolute;left:43.50px;top:72.91px" class="cls_011"><span class="cls_011">ratings &lt;- fread(text = gsub(</span><span class="cls_012">"::"</span><span class="cls_011">, </span><span class="cls_012">"\t"</span><span class="cls_011">, readLines(unzip(dl, </span><span class="cls_012">"ml-10M100K/ratings.dat"</span><span class="cls_011">))),</span></div>
+<div style="position:absolute;left:127.73px;top:83.72px" class="cls_011"><span class="cls_011">col.names = c(</span><span class="cls_012">"userId"</span><span class="cls_011">, </span><span class="cls_012">"movieId"</span><span class="cls_011">, </span><span class="cls_012">"rating"</span><span class="cls_011">, </span><span class="cls_012">"timestamp"</span><span class="cls_011">))</span></div>
+<div style="position:absolute;left:43.50px;top:105.32px" class="cls_011"><span class="cls_011">movies &lt;- str_split_fixed(readLines(unzip(dl, </span><span class="cls_012">"ml-10M100K/movies.dat"</span><span class="cls_011">)), </span><span class="cls_012">"\\::"</span><span class="cls_011">, </span><span class="cls_013">3</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:116.12px" class="cls_011"><span class="cls_011">colnames(movies) &lt;- c(</span><span class="cls_012">"movieId"</span><span class="cls_011">, </span><span class="cls_012">"title"</span><span class="cls_011">, </span><span class="cls_012">"genres"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:126.93px" class="cls_011"><span class="cls_011">movies &lt;- as.data.frame(movies) %>% mutate(movieId = as.numeric(levels(movieId))[movieId],</span></div>
+<div style="position:absolute;left:240.04px;top:137.73px" class="cls_011"><span class="cls_011">title = as.character(title),</span></div>
+<div style="position:absolute;left:240.04px;top:148.53px" class="cls_011"><span class="cls_011">genres = as.character(genres))</span></div>
+<div style="position:absolute;left:43.50px;top:170.14px" class="cls_011"><span class="cls_011">movielens &lt;- left_join(ratings, movies, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:191.75px" class="cls_009"><span class="cls_009">#if you want to run the whole dataset, disable the following command</span></div>
+<div style="position:absolute;left:43.50px;top:202.55px" class="cls_011"><span class="cls_011">movielens &lt;- movielens %>% slice(</span><span class="cls_013">1</span><span class="cls_011">:floor(nrow(movielens)/</span><span class="cls_013">4</span><span class="cls_011">))</span></div>
+<div style="position:absolute;left:43.50px;top:224.15px" class="cls_011"><span class="cls_011">rm( ratings, movies )</span></div>
+<div style="position:absolute;left:43.50px;top:256.56px" class="cls_011"><span class="cls_011">movielens$timestamp &lt;- movielens$timestamp %>% as.Date.POSIXct()</span></div>
+<div style="position:absolute;left:43.50px;top:278.17px" class="cls_011"><span class="cls_011">movielens$timestamp_year &lt;- movielens$timestamp %>% year()</span></div>
+<div style="position:absolute;left:43.50px;top:299.78px" class="cls_011"><span class="cls_011">movielens &lt;- movielens %>%</span></div>
+<div style="position:absolute;left:62.22px;top:310.58px" class="cls_011"><span class="cls_011">mutate_if(is.integer, as.factor) </span><span class="cls_009">#integers to factors</span></div>
+<div style="position:absolute;left:43.50px;top:332.18px" class="cls_011"><span class="cls_011">movielens$year &lt;- movielens %>%</span></div>
+<div style="position:absolute;left:52.86px;top:342.99px" class="cls_011"><span class="cls_011">pull(title) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:353.79px" class="cls_011"><span class="cls_011">str_extract(</span><span class="cls_012">"\\([:digit:]{4}\\)"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:364.59px" class="cls_011"><span class="cls_011">str_remove_all(</span><span class="cls_012">"\\(|\\)"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:375.40px" class="cls_011"><span class="cls_011">as.integer()</span></div>
+<div style="position:absolute;left:43.50px;top:407.81px" class="cls_011"><span class="cls_011">movielens$title &lt;-movielens$title %>% str_remove(</span><span class="cls_012">"\\([:digit:]{4}\\)"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:451.02px" class="cls_011"><span class="cls_011">mu &lt;- mean(movielens$rating)</span></div>
+<div style="position:absolute;left:43.50px;top:461.82px" class="cls_011"><span class="cls_011">med &lt;- median(movielens$rating)</span></div>
+<div style="position:absolute;left:43.50px;top:494.23px" class="cls_011"><span class="cls_011">movielens %>% ggplot( aes(x=rating)) +</span></div>
+<div style="position:absolute;left:57.54px;top:505.03px" class="cls_011"><span class="cls_011">geom_density(aes(y=..density..), fill = </span><span class="cls_012">"#99beff"</span><span class="cls_011">, col = </span><span class="cls_012">'#d9a757'</span><span class="cls_011">, alpha = </span><span class="cls_013">.2</span></div>
+<div style="position:absolute;left:431.57px;top:505.03px" class="cls_011"><span class="cls_011">)+</span></div>
+<div style="position:absolute;left:57.54px;top:515.84px" class="cls_011"><span class="cls_011">geom_histogram(aes(y=..density..),binwidth = </span><span class="cls_013">.5</span><span class="cls_011">,fill=</span><span class="cls_012">"#498ee3"</span><span class="cls_011">)+</span></div>
+<div style="position:absolute;left:62.22px;top:526.64px" class="cls_011"><span class="cls_011">geom_vline( aes( xintercept = mu, colour = </span><span class="cls_012">"mean"</span><span class="cls_011">), linetype =</span><span class="cls_012">'dashed'</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:537.44px" class="cls_011"><span class="cls_011">geom_vline(aes( xintercept = med, colour = </span><span class="cls_012">"median"</span><span class="cls_011">), linetype =</span><span class="cls_012">'dashed'</span><span class="cls_011"> )</span></div>
+<div style="position:absolute;left:416.92px;top:537.44px" class="cls_011"><span class="cls_011">+</span></div>
+<div style="position:absolute;left:62.22px;top:548.25px" class="cls_011"><span class="cls_011">theme_minimal()+</span></div>
+<div style="position:absolute;left:62.22px;top:559.05px" class="cls_011"><span class="cls_011">labs(title = </span><span class="cls_012">"Histogram and Density of Ratings"</span><span class="cls_011">, x = </span><span class="cls_012">"Rating"</span><span class="cls_011">, y = </span><span class="cls_012">"Density"</span><span class="cls_011">)+</span></div>
+<div style="position:absolute;left:62.22px;top:569.85px" class="cls_011"><span class="cls_011">theme(legend.title = element_blank())</span></div>
+<div style="position:absolute;left:43.50px;top:613.06px" class="cls_009"><span class="cls_009">#Create a new dataframe containing the count of each user</span></div>
+<div style="position:absolute;left:43.50px;top:623.87px" class="cls_011"><span class="cls_011">cnt &lt;- movielens %>% group_by(userId) %>% summarise( user_cnt = n() )</span></div>
+<div style="position:absolute;left:43.50px;top:645.47px" class="cls_009"><span class="cls_009">#average rating of each user</span></div>
+<div style="position:absolute;left:43.50px;top:656.28px" class="cls_011"><span class="cls_011">rat &lt;- movielens %>% group_by(userId) %>% summarise( mean_rating = mean(rating) )</span></div>
+<div style="position:absolute;left:43.50px;top:677.88px" class="cls_011"><span class="cls_011">p1 &lt;- cnt %>% left_join( rat, by = </span><span class="cls_012">"userId"</span><span class="cls_011"> ) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:688.68px" class="cls_011"><span class="cls_011">ggplot( aes(y = user_cnt, x = mean_rating ) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:699.49px" class="cls_011"><span class="cls_011">geom_point(show.legend = </span><span class="cls_015">F</span><span class="cls_011">, alpha = </span><span class="cls_013">.1</span><span class="cls_011">,col = </span><span class="cls_012">"#4685f2"</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:710.29px" class="cls_011"><span class="cls_011">labs( title = </span><span class="cls_012">"Count of User vs Mean_Rating"</span><span class="cls_011">, x = </span><span class="cls_012">""</span><span class="cls_011">, y = </span><span class="cls_012">"Times each user rated"</span><span class="cls_011"> )</span></div>
+<div style="position:absolute;left:43.50px;top:731.90px" class="cls_009"><span class="cls_009">#count of each movie</span></div>
+<div style="position:absolute;left:43.50px;top:742.70px" class="cls_011"><span class="cls_011">cnt_mov&lt;- movielens %>% group_by(movieId) %>% summarise( movie_cnt = n() )</span></div>
+<div style="position:absolute;left:43.50px;top:764.31px" class="cls_009"><span class="cls_009">#average rating of each movie</span></div>
+<div style="position:absolute;left:43.50px;top:775.11px" class="cls_011"><span class="cls_011">rat_mov &lt;- movielens %>% group_by(movieId) %>% summarise( mean_rating = mean(rating) )</span></div>
+<div style="position:absolute;left:43.50px;top:796.71px" class="cls_011"><span class="cls_011">mov_df &lt;- cnt_mov %>% left_join(rat_mov, by = </span><span class="cls_012">"movieId"</span><span class="cls_011"> )</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:13632px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background17.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:33.30px" class="cls_011"><span class="cls_011">p2 &lt;-  mov_df %>%</span></div>
+<div style="position:absolute;left:62.22px;top:44.10px" class="cls_011"><span class="cls_011">ggplot( aes(y = movie_cnt, x = mean_rating ) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:54.91px" class="cls_011"><span class="cls_011">geom_point(show.legend = </span><span class="cls_015">F</span><span class="cls_011">, alpha = </span><span class="cls_013">.1</span><span class="cls_011">,col = </span><span class="cls_012">"#4685f2"</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:65.71px" class="cls_011"><span class="cls_011">labs( title = </span><span class="cls_012">"Count of Movie vs Mean_Rating"</span><span class="cls_011">, x = </span><span class="cls_012">"Mean Ratings"</span><span class="cls_011">, y = </span><span class="cls_012">"Times each movie was rated"</span><span class="cls_011"> )</span></div>
+<div style="position:absolute;left:43.50px;top:87.32px" class="cls_011"><span class="cls_011">grid.arrange(p1,p2)</span></div>
+<div style="position:absolute;left:43.50px;top:108.92px" class="cls_011"><span class="cls_011">rm(cnt,rat,cnt_mov,rat_mov,p1,p2)</span></div>
+<div style="position:absolute;left:43.50px;top:141.33px" class="cls_009"><span class="cls_009">#Add the title from original dataset</span></div>
+<div style="position:absolute;left:43.50px;top:152.13px" class="cls_011"><span class="cls_011">mov_df$title &lt;- movielens[match(mov_df$movieId, movielens$movieId),</span><span class="cls_012">"title"</span><span class="cls_011">]</span></div>
+<div style="position:absolute;left:43.50px;top:173.74px" class="cls_011"><span class="cls_011">worst_movies &lt;- mov_df %>%</span></div>
+<div style="position:absolute;left:62.22px;top:184.54px" class="cls_011"><span class="cls_011">arrange((mean_rating)) %>% </span><span class="cls_009">#arrange from highest to lowest rating</span></div>
+<div style="position:absolute;left:62.22px;top:195.35px" class="cls_011"><span class="cls_011">slice(</span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">) %>% </span><span class="cls_009">#grab the first 10</span></div>
+<div style="position:absolute;left:62.22px;top:206.15px" class="cls_011"><span class="cls_011">ggplot( aes(x = reorder(title,mean_rating), y = mean_rating) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:216.95px" class="cls_011"><span class="cls_011">geom_point(size = </span><span class="cls_013">9</span><span class="cls_011">, col = </span><span class="cls_012">"#baaa6e"</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:227.76px" class="cls_011"><span class="cls_011">coord_flip() +</span></div>
+<div style="position:absolute;left:62.22px;top:238.56px" class="cls_011"><span class="cls_011">geom_vline(xintercept = </span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">, col = </span><span class="cls_012">"grey80"</span><span class="cls_011">) + </span><span class="cls_009">#lines on which our dots "walk"</span></div>
+<div style="position:absolute;left:62.22px;top:249.36px" class="cls_011"><span class="cls_011">theme_linedraw()+</span></div>
+<div style="position:absolute;left:62.22px;top:260.16px" class="cls_011"><span class="cls_011">theme(axis.line = element_blank()) +</span></div>
+<div style="position:absolute;left:62.22px;top:270.97px" class="cls_011"><span class="cls_011">geom_text( aes(label = mean_rating), col = </span><span class="cls_012">"black"</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:281.77px" class="cls_011"><span class="cls_011">labs(title = </span><span class="cls_012">"Worst Movies"</span><span class="cls_011">, subtitle =  </span><span class="cls_012">"Regardless of the Number of Ratings"</span><span class="cls_011"> , y = </span><span class="cls_012">"Mean Rating"</span><span class="cls_011">, x =</span></div>
+<div style="position:absolute;left:43.50px;top:292.57px" class="cls_012"><span class="cls_012">""</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:314.18px" class="cls_011"><span class="cls_011">best_movies &lt;- mov_df %>%</span></div>
+<div style="position:absolute;left:62.22px;top:324.98px" class="cls_011"><span class="cls_011">arrange(desc(mean_rating)) %>% </span><span class="cls_009">#arrange from highest to lowest rating</span></div>
+<div style="position:absolute;left:62.22px;top:335.79px" class="cls_011"><span class="cls_011">slice(</span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">) %>% </span><span class="cls_009">#grab the first 10</span></div>
+<div style="position:absolute;left:62.22px;top:346.59px" class="cls_011"><span class="cls_011">ggplot( aes(x = reorder(title,mean_rating), y = mean_rating) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:357.39px" class="cls_011"><span class="cls_011">geom_point(size = </span><span class="cls_013">9</span><span class="cls_011">, col = </span><span class="cls_012">"#ceabd1"</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:368.19px" class="cls_011"><span class="cls_011">coord_flip() +</span></div>
+<div style="position:absolute;left:62.22px;top:379.00px" class="cls_011"><span class="cls_011">geom_vline(xintercept = </span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">, col = </span><span class="cls_012">"grey80"</span><span class="cls_011">) + </span><span class="cls_009">#lines on which our dots "walk"</span></div>
+<div style="position:absolute;left:62.22px;top:389.80px" class="cls_011"><span class="cls_011">theme_linedraw()+</span></div>
+<div style="position:absolute;left:62.22px;top:400.60px" class="cls_011"><span class="cls_011">theme(axis.line = element_blank()) +</span></div>
+<div style="position:absolute;left:62.22px;top:411.41px" class="cls_011"><span class="cls_011">geom_text( aes(label = mean_rating), col = </span><span class="cls_012">"black"</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:422.21px" class="cls_011"><span class="cls_011">labs(title = </span><span class="cls_012">"Best Movies"</span><span class="cls_011">, subtitle =  </span><span class="cls_012">"Regardless of the Number of Ratings"</span><span class="cls_011"> , y = </span><span class="cls_012">"Mean Rating"</span><span class="cls_011">, x = </span><span class="cls_012">"</span></div>
+<div style="position:absolute;left:43.50px;top:433.01px" class="cls_012"><span class="cls_012">"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:454.62px" class="cls_011"><span class="cls_011">grid.arrange(best_movies, worst_movies)</span></div>
+<div style="position:absolute;left:43.50px;top:476.22px" class="cls_011"><span class="cls_011">worst_movies &lt;- mov_df %>%</span></div>
+<div style="position:absolute;left:62.22px;top:487.03px" class="cls_011"><span class="cls_011">arrange((mean_rating)) %>% </span><span class="cls_009">#arrange from highest to lowest rating</span></div>
+<div style="position:absolute;left:62.22px;top:497.83px" class="cls_011"><span class="cls_011">slice(</span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">) %>% </span><span class="cls_009">#grab the first 10</span></div>
+<div style="position:absolute;left:62.22px;top:508.63px" class="cls_011"><span class="cls_011">ggplot( aes(x = reorder(title,mean_rating), y = mean_rating) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:519.44px" class="cls_011"><span class="cls_011">geom_point(size = </span><span class="cls_013">9</span><span class="cls_011">, col = </span><span class="cls_012">"#baaa6e"</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:530.24px" class="cls_011"><span class="cls_011">coord_flip() +</span></div>
+<div style="position:absolute;left:62.22px;top:541.04px" class="cls_011"><span class="cls_011">geom_vline(xintercept = </span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">, col = </span><span class="cls_012">"grey80"</span><span class="cls_011">) + </span><span class="cls_009">#lines on which our dots "walk"</span></div>
+<div style="position:absolute;left:62.22px;top:551.85px" class="cls_011"><span class="cls_011">theme_linedraw()+</span></div>
+<div style="position:absolute;left:62.22px;top:562.65px" class="cls_011"><span class="cls_011">theme(axis.line = element_blank()) +</span></div>
+<div style="position:absolute;left:62.22px;top:573.45px" class="cls_011"><span class="cls_011">geom_text( aes(label = movie_cnt), col = </span><span class="cls_012">"black"</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:584.26px" class="cls_011"><span class="cls_011">labs(title = </span><span class="cls_012">"Worst Movies"</span><span class="cls_011">, subtitle =  </span><span class="cls_012">"Regardless of the Number of Ratings"</span><span class="cls_011"> , y = </span><span class="cls_012">"Mean Rating"</span><span class="cls_011">, x =</span></div>
+<div style="position:absolute;left:43.50px;top:595.06px" class="cls_012"><span class="cls_012">""</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:616.66px" class="cls_011"><span class="cls_011">best_movies &lt;- mov_df %>%</span></div>
+<div style="position:absolute;left:62.22px;top:627.47px" class="cls_011"><span class="cls_011">arrange(desc(mean_rating)) %>% </span><span class="cls_009">#arrange from highest to lowest rating</span></div>
+<div style="position:absolute;left:62.22px;top:638.27px" class="cls_011"><span class="cls_011">slice(</span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">) %>% </span><span class="cls_009">#grab the first 10</span></div>
+<div style="position:absolute;left:62.22px;top:649.07px" class="cls_011"><span class="cls_011">ggplot( aes(x = reorder(title,mean_rating), y = mean_rating) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:659.88px" class="cls_011"><span class="cls_011">geom_point(size = </span><span class="cls_013">9</span><span class="cls_011">, col = </span><span class="cls_012">"#ceabd1"</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:670.68px" class="cls_011"><span class="cls_011">coord_flip() +</span></div>
+<div style="position:absolute;left:62.22px;top:681.48px" class="cls_011"><span class="cls_011">geom_vline(xintercept = </span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">, col = </span><span class="cls_012">"grey80"</span><span class="cls_011">) + </span><span class="cls_009">#lines on which our dots "walk"</span></div>
+<div style="position:absolute;left:62.22px;top:692.29px" class="cls_011"><span class="cls_011">theme_linedraw()+</span></div>
+<div style="position:absolute;left:62.22px;top:703.09px" class="cls_011"><span class="cls_011">theme(axis.line = element_blank()) +</span></div>
+<div style="position:absolute;left:62.22px;top:713.89px" class="cls_011"><span class="cls_011">geom_text( aes(label = movie_cnt), col = </span><span class="cls_012">"black"</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:724.69px" class="cls_011"><span class="cls_011">labs(title = </span><span class="cls_012">"Best Movies"</span><span class="cls_011">, subtitle =  </span><span class="cls_012">"Regardless of the Number of Ratings"</span><span class="cls_011"> , y = </span><span class="cls_012">"Mean Rating"</span><span class="cls_011">, x = </span><span class="cls_012">"</span></div>
+<div style="position:absolute;left:43.50px;top:735.50px" class="cls_012"><span class="cls_012">"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:757.10px" class="cls_011"><span class="cls_011">grid.arrange(best_movies, worst_movies)</span></div>
+<div style="position:absolute;left:43.50px;top:778.71px" class="cls_009"><span class="cls_009">#pick the 1rd quantile of the movie count as a low limit</span></div>
+<div style="position:absolute;left:43.50px;top:789.51px" class="cls_011"><span class="cls_011">limit &lt;- (summary(mov_df$movie_cnt))[</span><span class="cls_013">5</span><span class="cls_011">]</span></div>
+<div style="position:absolute;left:43.50px;top:811.12px" class="cls_011"><span class="cls_011">best_movies &lt;- mov_df %>%</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:14484px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background18.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:26.10px" class="cls_011"><span class="cls_011">best_movies &lt;- mov_df %>%</span></div>
+<div style="position:absolute;left:62.22px;top:36.90px" class="cls_011"><span class="cls_011">filter(movie_cnt > limit) %>% </span><span class="cls_009">#throw away movies with few ratings</span></div>
+<div style="position:absolute;left:62.22px;top:47.71px" class="cls_011"><span class="cls_011">arrange(desc(mean_rating)) %>% </span><span class="cls_009">#arrange from highest to lowest rating</span></div>
+<div style="position:absolute;left:62.22px;top:58.51px" class="cls_011"><span class="cls_011">slice(</span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">) %>% </span><span class="cls_009">#grab the first 10</span></div>
+<div style="position:absolute;left:62.22px;top:69.31px" class="cls_011"><span class="cls_011">ggplot( aes(x = reorder(title,mean_rating), y = mean_rating) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:80.11px" class="cls_011"><span class="cls_011">geom_point(size = </span><span class="cls_013">9</span><span class="cls_011">, col = </span><span class="cls_012">"#ceabd1"</span><span class="cls_011">) + coord_flip() +</span></div>
+<div style="position:absolute;left:62.22px;top:90.92px" class="cls_011"><span class="cls_011">geom_vline(xintercept = </span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">, col = </span><span class="cls_012">"grey80"</span><span class="cls_011">) + </span><span class="cls_009">#lines on which our dots "walk"</span></div>
+<div style="position:absolute;left:62.22px;top:101.72px" class="cls_011"><span class="cls_011">theme_classic()+</span></div>
+<div style="position:absolute;left:62.22px;top:112.52px" class="cls_011"><span class="cls_011">theme(axis.line = element_blank()) +</span></div>
+<div style="position:absolute;left:62.22px;top:123.33px" class="cls_011"><span class="cls_011">geom_text( aes(label = movie_cnt), col = </span><span class="cls_012">"black"</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:134.13px" class="cls_011"><span class="cls_011">labs(title = paste(</span><span class="cls_012">"Best Movies with more than"</span><span class="cls_011">,limit,</span><span class="cls_012">"Ratings"</span><span class="cls_011">), y = </span><span class="cls_012">"Mean Rating"</span><span class="cls_011">, x = </span><span class="cls_012">""</span><span class="cls_011">, subtitle =</span></div>
+<div style="position:absolute;left:43.50px;top:144.93px" class="cls_012"><span class="cls_012">"Number of Ratings inside the Dots"</span><span class="cls_011"> )</span></div>
+<div style="position:absolute;left:43.50px;top:166.54px" class="cls_011"><span class="cls_011">worst_movies &lt;- mov_df %>%</span></div>
+<div style="position:absolute;left:62.22px;top:177.34px" class="cls_011"><span class="cls_011">filter(movie_cnt > limit) %>% </span><span class="cls_009">#throw away movies with few ratings</span></div>
+<div style="position:absolute;left:62.22px;top:188.14px" class="cls_011"><span class="cls_011">arrange((mean_rating)) %>% </span><span class="cls_009">#arrange from highest to lowest rating</span></div>
+<div style="position:absolute;left:62.22px;top:198.95px" class="cls_011"><span class="cls_011">slice(</span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">) %>% </span><span class="cls_009">#grab the first 10</span></div>
+<div style="position:absolute;left:62.22px;top:209.75px" class="cls_011"><span class="cls_011">ggplot( aes(x = reorder(title,mean_rating), y = mean_rating) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:220.55px" class="cls_011"><span class="cls_011">geom_point(size = </span><span class="cls_013">9</span><span class="cls_011">, col = </span><span class="cls_012">"#baaa6e"</span><span class="cls_011">) + coord_flip() +</span></div>
+<div style="position:absolute;left:62.22px;top:231.36px" class="cls_011"><span class="cls_011">geom_vline(xintercept = </span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">, col = </span><span class="cls_012">"grey80"</span><span class="cls_011">) + </span><span class="cls_009">#lines on which our dots "walk"</span></div>
+<div style="position:absolute;left:62.22px;top:242.16px" class="cls_011"><span class="cls_011">theme_classic()+</span></div>
+<div style="position:absolute;left:62.22px;top:252.96px" class="cls_011"><span class="cls_011">theme(axis.line = element_blank()) +</span></div>
+<div style="position:absolute;left:62.22px;top:263.77px" class="cls_011"><span class="cls_011">geom_text( aes(label = movie_cnt), col = </span><span class="cls_012">"black"</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:274.57px" class="cls_011"><span class="cls_011">labs(title = paste(</span><span class="cls_012">"Worst Movies with more than"</span><span class="cls_011">,limit,</span><span class="cls_012">"Ratings"</span><span class="cls_011">), y = </span><span class="cls_012">"Mean Rating"</span><span class="cls_011">, x = </span><span class="cls_012">""</span><span class="cls_011">, subtitle</span></div>
+<div style="position:absolute;left:43.50px;top:285.37px" class="cls_011"><span class="cls_011">= </span><span class="cls_012">"Number of Ratings inside the Dots"</span><span class="cls_011"> )</span></div>
+<div style="position:absolute;left:43.50px;top:306.98px" class="cls_011"><span class="cls_011">grid.arrange(best_movies, worst_movies)</span></div>
+<div style="position:absolute;left:43.50px;top:317.78px" class="cls_011"><span class="cls_011">rm(mov_df,best_movies,worst_movies)</span></div>
+<div style="position:absolute;left:43.50px;top:350.19px" class="cls_009"><span class="cls_009">#For every genre entry create a separate row containing only this entry</span></div>
+<div style="position:absolute;left:43.50px;top:360.99px" class="cls_011"><span class="cls_011">movielens_genres &lt;- movielens %>%</span></div>
+<div style="position:absolute;left:80.94px;top:371.80px" class="cls_011"><span class="cls_011">cSplit( </span><span class="cls_012">"genres"</span><span class="cls_011">, </span><span class="cls_009">#split the genres column</span></div>
+<div style="position:absolute;left:113.70px;top:382.60px" class="cls_011"><span class="cls_011">sep=</span><span class="cls_012">"|"</span><span class="cls_011">, </span><span class="cls_009">#on separator |</span></div>
+<div style="position:absolute;left:113.70px;top:393.40px" class="cls_011"><span class="cls_011">direction =  </span><span class="cls_012">"long"</span><span class="cls_011"> ) </span><span class="cls_009">#towards a long direction</span></div>
+<div style="position:absolute;left:43.50px;top:415.01px" class="cls_011"><span class="cls_011">print(</span><span class="cls_012">" Genres count of distinct values : "</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:425.81px" class="cls_011"><span class="cls_011">movielens_genres %>% pull(genres) %>% table() %>% sort(decreasing = </span><span class="cls_015">TRUE</span><span class="cls_011">) %>% print()</span></div>
+<div style="position:absolute;left:43.50px;top:447.42px" class="cls_011"><span class="cls_011">movielens_genres$genres &lt;- plyr::revalue(movielens_genres$genres, c(</span><span class="cls_012">"Horror"</span><span class="cls_011"> = </span><span class="cls_012">"Thriller"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:361.59px;top:458.22px" class="cls_012"><span class="cls_012">"Adventure"</span><span class="cls_011"> = </span><span class="cls_012">"Action"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:361.59px;top:469.02px" class="cls_012"><span class="cls_012">"War"</span><span class="cls_011"> = </span><span class="cls_012">"Action"</span><span class="cls_011"> ,</span></div>
+<div style="position:absolute;left:361.59px;top:479.83px" class="cls_012"><span class="cls_012">"Sci-Fi"</span><span class="cls_011"> = </span><span class="cls_012">"Fantasy"</span><span class="cls_011">))</span></div>
+<div style="position:absolute;left:43.50px;top:501.43px" class="cls_011"><span class="cls_011">print(</span><span class="cls_012">" Genres count of distinct values : "</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:512.23px" class="cls_011"><span class="cls_011">movielens_genres %>% pull(genres) %>% table() %>% sort(decreasing = </span><span class="cls_015">TRUE</span><span class="cls_011">) %>% print()</span></div>
+<div style="position:absolute;left:43.50px;top:533.84px" class="cls_011"><span class="cls_011">pop_genres &lt;- movielens_genres %>%</span></div>
+<div style="position:absolute;left:62.22px;top:544.64px" class="cls_011"><span class="cls_011">group_by( genres ) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:555.45px" class="cls_011"><span class="cls_011">summarize( n = n() ) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:566.25px" class="cls_011"><span class="cls_011">arrange(desc(n)) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:577.05px" class="cls_011"><span class="cls_011">head(</span><span class="cls_013">10</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:598.66px" class="cls_011"><span class="cls_011">pop_genres %>%</span></div>
+<div style="position:absolute;left:62.22px;top:609.46px" class="cls_011"><span class="cls_011">ggplot( aes(x = reorder(genres,n), y = n) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:620.27px" class="cls_011"><span class="cls_011">geom_bar( aes(fill = genres), stat = </span><span class="cls_012">"identity"</span><span class="cls_011">,width = </span><span class="cls_013">.6</span><span class="cls_011">, show.legend = </span><span class="cls_015">FALSE</span><span class="cls_011">)+</span></div>
+<div style="position:absolute;left:62.22px;top:631.07px" class="cls_011"><span class="cls_011">coord_flip()+</span></div>
+<div style="position:absolute;left:62.22px;top:641.87px" class="cls_011"><span class="cls_011">theme_linedraw()+</span></div>
+<div style="position:absolute;left:62.22px;top:652.67px" class="cls_011"><span class="cls_011">labs( title = </span><span class="cls_012">"Count of Ratings by Genre"</span><span class="cls_011">, y = </span><span class="cls_012">"Count"</span><span class="cls_011">, x = </span><span class="cls_012">""</span></div>
+<div style="position:absolute;left:362.55px;top:652.67px" class="cls_011"><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:674.28px" class="cls_011"><span class="cls_011">movielens_genres %>%</span></div>
+<div style="position:absolute;left:62.22px;top:685.08px" class="cls_011"><span class="cls_011">filter(genres %</span><span class="cls_010">in</span><span class="cls_011">% pop_genres$genres ) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:695.89px" class="cls_011"><span class="cls_011">group_by(genres) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:706.69px" class="cls_011"><span class="cls_011">summarize(mean_rating = mean(rating)) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:717.49px" class="cls_011"><span class="cls_011">mutate( n = pop_genres$n[(match(genres, pop_genres$genres))] ) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:728.30px" class="cls_011"><span class="cls_011">ggplot( aes( x = reorder(genres,n), y = mean_rating ) )+</span></div>
+<div style="position:absolute;left:62.22px;top:739.10px" class="cls_011"><span class="cls_011">geom_point(size = </span><span class="cls_013">9</span><span class="cls_011">, col = </span><span class="cls_012">"#2ecff0"</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:749.90px" class="cls_011"><span class="cls_011">geom_vline( xintercept = </span><span class="cls_013">1</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">, col = </span><span class="cls_012">"gray"</span><span class="cls_011"> )+</span></div>
+<div style="position:absolute;left:62.22px;top:760.70px" class="cls_011"><span class="cls_011">theme(axis.line = element_blank()) +</span></div>
+<div style="position:absolute;left:62.22px;top:771.51px" class="cls_011"><span class="cls_011">geom_text( aes(label = round(mean_rating,</span><span class="cls_013">2</span><span class="cls_011">), size = </span><span class="cls_013">8</span><span class="cls_011"> ), col = </span><span class="cls_012">"black"</span><span class="cls_011">, show.legend = </span><span class="cls_015">FALSE</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:782.31px" class="cls_011"><span class="cls_011">coord_flip() +</span></div>
+<div style="position:absolute;left:62.22px;top:793.11px" class="cls_011"><span class="cls_011">theme_minimal() +</span></div>
+<div style="position:absolute;left:62.22px;top:803.92px" class="cls_011"><span class="cls_011">labs( title = </span><span class="cls_012">"Mean Rating per Genre"</span><span class="cls_011">, subtitle = </span><span class="cls_012">"Ordered by number of ratings"</span><span class="cls_011">, x = </span><span class="cls_012">""</span><span class="cls_011">, y = </span><span class="cls_012">"Mean Rat</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:15336px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background19.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:29.70px" class="cls_012"><span class="cls_012">ing"</span><span class="cls_011"> )</span></div>
+<div style="position:absolute;left:43.50px;top:51.31px" class="cls_011"><span class="cls_011">movielens_genres %>%</span></div>
+<div style="position:absolute;left:62.22px;top:62.11px" class="cls_011"><span class="cls_011">filter(genres %</span><span class="cls_010">in</span><span class="cls_011">% pop_genres$genres ) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:72.91px" class="cls_011"><span class="cls_011">ggplot() +</span></div>
+<div style="position:absolute;left:62.22px;top:83.72px" class="cls_011"><span class="cls_011">geom_violin( aes( x = genres, y = rating, fill = genres ), show.legend = </span><span class="cls_015">FALSE</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:94.52px" class="cls_011"><span class="cls_011">coord_flip() +</span></div>
+<div style="position:absolute;left:62.22px;top:105.32px" class="cls_011"><span class="cls_011">labs( title = </span><span class="cls_012">"Ratings by Genre"</span><span class="cls_011">, x = </span><span class="cls_012">""</span><span class="cls_011">, y = </span><span class="cls_012">"Rating"</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:62.22px;top:116.12px" class="cls_011"><span class="cls_011">theme_linedraw()</span></div>
+<div style="position:absolute;left:43.50px;top:137.73px" class="cls_009"><span class="cls_009">#store top genres and users in variables for ease of filtering</span></div>
+<div style="position:absolute;left:43.50px;top:148.53px" class="cls_011"><span class="cls_011">top_genres &lt;- movielens_genres %>%</span></div>
+<div style="position:absolute;left:62.22px;top:159.34px" class="cls_011"><span class="cls_011">group_by( genres ) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:170.14px" class="cls_011"><span class="cls_011">summarize( n = n() ) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:180.94px" class="cls_011"><span class="cls_011">arrange(n%>% desc()) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:191.75px" class="cls_011"><span class="cls_011">head(</span><span class="cls_013">6</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:202.55px" class="cls_011"><span class="cls_011">pull(genres)</span></div>
+<div style="position:absolute;left:43.50px;top:224.15px" class="cls_011"><span class="cls_011">top_users &lt;- movielens_genres %>%</span></div>
+<div style="position:absolute;left:62.22px;top:234.96px" class="cls_011"><span class="cls_011">group_by(userId) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:245.76px" class="cls_011"><span class="cls_011">summarize( user_count = n() ) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:256.56px" class="cls_011"><span class="cls_011">arrange(desc(user_count)) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:267.37px" class="cls_011"><span class="cls_011">head(</span><span class="cls_013">6</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:62.22px;top:278.17px" class="cls_011"><span class="cls_011">pull(userId)</span></div>
+<div style="position:absolute;left:43.50px;top:299.78px" class="cls_011"><span class="cls_011">movielens_genres &lt;- movielens_genres %>%</span></div>
+<div style="position:absolute;left:62.22px;top:310.58px" class="cls_011"><span class="cls_011">filter(genres %</span><span class="cls_010">in</span><span class="cls_011">% top_genres, userId %</span><span class="cls_010">in</span><span class="cls_011">% top_users)</span><span class="cls_009">#keep only top genres and users</span></div>
+<div style="position:absolute;left:43.50px;top:342.99px" class="cls_009"><span class="cls_009">#transform data in wide format</span></div>
+<div style="position:absolute;left:43.50px;top:353.79px" class="cls_011"><span class="cls_011">movielens_genres &lt;- movielens_genres %>%</span></div>
+<div style="position:absolute;left:62.22px;top:364.59px" class="cls_011"><span class="cls_011">dcast(userId + movieId + title + rating ~ genres,</span></div>
+<div style="position:absolute;left:90.30px;top:375.40px" class="cls_011"><span class="cls_011">fun.aggregate = length,</span></div>
+<div style="position:absolute;left:90.30px;top:386.20px" class="cls_011"><span class="cls_011">value.var = </span><span class="cls_012">"rating"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:197.75px;top:386.20px" class="cls_009"><span class="cls_009">#convert to dummy columns</span></div>
+<div style="position:absolute;left:43.50px;top:407.81px" class="cls_009"><span class="cls_009">#Replace 1's with the actual rating</span></div>
+<div style="position:absolute;left:43.50px;top:418.61px" class="cls_011"><span class="cls_011">movielens_genres[,</span><span class="cls_013">4</span><span class="cls_011">:ncol(movielens_genres)] &lt;- movielens_genres[,</span><span class="cls_013">4</span><span class="cls_011">:ncol(movielens_genres)] %>%</span></div>
+<div style="position:absolute;left:62.22px;top:429.41px" class="cls_011"><span class="cls_011">mutate_all( ~case_when( . !=</span><span class="cls_013">0</span><span class="cls_011"> ~ rating, . ==</span><span class="cls_013">0</span><span class="cls_011"> ~ </span><span class="cls_013">0</span><span class="cls_011"> ) ) </span><span class="cls_009">#whenever each dummy column is not zero, place the</span></div>
+<div style="position:absolute;left:43.50px;top:440.21px" class="cls_009"><span class="cls_009">equivalent rating</span></div>
+<div style="position:absolute;left:48.18px;top:461.82px" class="cls_011"><span class="cls_011">movielens_genres[,c(</span><span class="cls_013">1</span><span class="cls_011">,</span><span class="cls_013">5</span><span class="cls_011">:</span><span class="cls_013">10</span><span class="cls_011">)] %>%</span></div>
+<div style="position:absolute;left:57.54px;top:472.62px" class="cls_011"><span class="cls_011">group_by(userId) %>%</span></div>
+<div style="position:absolute;left:57.54px;top:483.43px" class="cls_011"><span class="cls_011">summarize_all(mean)</span></div>
+<div style="position:absolute;left:155.81px;top:483.43px" class="cls_011"><span class="cls_011">%>% </span><span class="cls_009">#compute the mean of each user in each genre</span></div>
+<div style="position:absolute;left:62.22px;top:494.23px" class="cls_011"><span class="cls_011">gather(key = </span><span class="cls_012">"Genre"</span><span class="cls_011">, value = </span><span class="cls_012">"Average_Rating"</span><span class="cls_011"> , -userId) %>% </span><span class="cls_009">#gather it for easier plotting</span></div>
+<div style="position:absolute;left:62.22px;top:505.03px" class="cls_011"><span class="cls_011">ggplot( aes(x =  Genre, y = Average_Rating)) +</span></div>
+<div style="position:absolute;left:62.22px;top:515.84px" class="cls_011"><span class="cls_011">geom_point(col = </span><span class="cls_012">"#b8182d"</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:526.64px" class="cls_011"><span class="cls_011">facet_grid(~userId) +</span></div>
+<div style="position:absolute;left:62.22px;top:537.44px" class="cls_011"><span class="cls_011">geom_segment(aes(x = Genre, y = </span><span class="cls_013">0</span><span class="cls_011">, xend = Genre, yend = Average_Rating-</span><span class="cls_013">.02</span><span class="cls_011">), color = </span><span class="cls_012">"#ffc64a"</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:548.24px" class="cls_011"><span class="cls_011">labs(title = </span><span class="cls_012">"Average Rating per Genre"</span><span class="cls_011">, subtitle = </span><span class="cls_012">"Faceted by UserId"</span><span class="cls_011">, y = </span><span class="cls_012">"Average Rating"</span><span class="cls_011">, x = </span><span class="cls_012">"User</span></div>
+<div style="position:absolute;left:43.50px;top:559.05px" class="cls_012"><span class="cls_012">"</span><span class="cls_011">)+</span></div>
+<div style="position:absolute;left:62.22px;top:569.85px" class="cls_011"><span class="cls_011">theme_linedraw()+</span></div>
+<div style="position:absolute;left:62.22px;top:580.65px" class="cls_011"><span class="cls_011">theme(axis.text.x = element_text(face = </span><span class="cls_012">"bold"</span><span class="cls_011">, color = </span><span class="cls_012">"#2b05b3"</span><span class="cls_011">, size = </span><span class="cls_013">8</span><span class="cls_011">, angle = </span><span class="cls_013">60</span><span class="cls_011">))</span></div>
+<div style="position:absolute;left:43.50px;top:602.26px" class="cls_011"><span class="cls_011">rm(movielens_genres,top_genres,top_users, pop_genres)</span></div>
+<div style="position:absolute;left:43.50px;top:645.47px" class="cls_011"><span class="cls_011">movielens %>% group_by(year) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:656.28px" class="cls_011"><span class="cls_011">summarize( average_rating = mean(rating) ) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:667.08px" class="cls_011"><span class="cls_011">ggplot(aes(x = year , y = average_rating) ) +</span></div>
+<div style="position:absolute;left:52.86px;top:677.88px" class="cls_011"><span class="cls_011">geom_line(lwd = </span><span class="cls_013">1.1</span><span class="cls_011">, col = </span><span class="cls_012">"navyblue"</span><span class="cls_011">)+</span></div>
+<div style="position:absolute;left:53.11px;top:688.68px" class="cls_009"><span class="cls_009">#geom_point( aes(size</span></div>
+<div style="position:absolute;left:160.73px;top:688.68px" class="cls_009"><span class="cls_009">) +</span></div>
+<div style="position:absolute;left:52.86px;top:699.49px" class="cls_011"><span class="cls_011">theme_minimal() +</span></div>
+<div style="position:absolute;left:52.86px;top:710.29px" class="cls_011"><span class="cls_011">scale_y_continuous(limits = c(</span><span class="cls_013">0</span><span class="cls_011">,</span><span class="cls_013">5</span><span class="cls_011">))+</span></div>
+<div style="position:absolute;left:52.86px;top:721.09px" class="cls_011"><span class="cls_011">labs(y = </span><span class="cls_012">"Uearly Average Rating"</span><span class="cls_011">,x = </span><span class="cls_012">"Uear"</span><span class="cls_011">, title = </span><span class="cls_012">"Average Rating by Release Uear"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:764.31px" class="cls_009"><span class="cls_009">#medi &lt;- median(movielens$)</span></div>
+<div style="position:absolute;left:43.50px;top:785.91px" class="cls_011"><span class="cls_011">movielens %>% group_by( timestamp_year ) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:796.71px" class="cls_011"><span class="cls_011">summarise(avg_rating = mean(rating), Number_of_Ratings = n()) -> temp</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:16188px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background20.jpg" width=595 height=842></div>
+<div style="position:absolute;left:43.50px;top:33.30px" class="cls_011"><span class="cls_011">medi &lt;- median(temp$avg_rating)</span></div>
+<div style="position:absolute;left:43.50px;top:54.91px" class="cls_011"><span class="cls_011">temp %>%</span></div>
+<div style="position:absolute;left:62.22px;top:65.71px" class="cls_011"><span class="cls_011">ggplot( aes( x = timestamp_year, y = avg_rating ) ) +</span></div>
+<div style="position:absolute;left:53.11px;top:76.51px" class="cls_009"><span class="cls_009">#geom_line(lwd = 1.1, col = "navyblue")+</span></div>
+<div style="position:absolute;left:52.86px;top:87.32px" class="cls_011"><span class="cls_011">geom_point(aes(size = Number_of_Ratings ), col = </span><span class="cls_012">"navyblue"</span><span class="cls_011">)+</span></div>
+<div style="position:absolute;left:52.86px;top:98.12px" class="cls_011"><span class="cls_011">geom_hline(  yintercept = medi)+</span></div>
+<div style="position:absolute;left:52.86px;top:108.92px" class="cls_011"><span class="cls_011">theme_minimal() +</span></div>
+<div style="position:absolute;left:52.86px;top:119.73px" class="cls_011"><span class="cls_011">scale_y_continuous(limits = c(</span><span class="cls_013">0</span><span class="cls_011">,</span><span class="cls_013">5</span><span class="cls_011">))+</span></div>
+<div style="position:absolute;left:52.86px;top:130.53px" class="cls_011"><span class="cls_011">labs(y = </span><span class="cls_012">"Uearly Average Rating"</span><span class="cls_011">,x = </span><span class="cls_012">"Uear"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:76.26px;top:141.33px" class="cls_011"><span class="cls_011">title = </span><span class="cls_012">"Average Rating by Uear each Rating placed"</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:76.26px;top:152.13px" class="cls_011"><span class="cls_011">subtitle = </span><span class="cls_012">"Median Average Rating as Horizontal line"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:195.35px" class="cls_011"><span class="cls_011">movielens &lt;- movielens %>% select( c(movieId,userId,rating) )</span></div>
+<div style="position:absolute;left:43.50px;top:216.95px" class="cls_011"><span class="cls_011">set.seed(</span><span class="cls_013">1</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:227.76px" class="cls_009"><span class="cls_009"># if using R 3.5 or earlier, use `set.seed(1)` instead</span></div>
+<div style="position:absolute;left:43.50px;top:238.56px" class="cls_011"><span class="cls_011">test_index &lt;- createDataPartition(y = movielens$rating, times = </span><span class="cls_013">1</span><span class="cls_011">, p = </span><span class="cls_013">0.1</span><span class="cls_011">, list = </span><span class="cls_015">FALSE</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:249.36px" class="cls_011"><span class="cls_011">edx &lt;- movielens[-test_index,]</span></div>
+<div style="position:absolute;left:43.50px;top:260.16px" class="cls_011"><span class="cls_011">temp &lt;- movielens[test_index,]</span></div>
+<div style="position:absolute;left:43.50px;top:281.77px" class="cls_011"><span class="cls_011">validation &lt;- temp %>%</span></div>
+<div style="position:absolute;left:66.90px;top:292.57px" class="cls_011"><span class="cls_011">semi_join(edx, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:66.90px;top:303.38px" class="cls_011"><span class="cls_011">semi_join(edx, by = </span><span class="cls_012">"userId"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:324.98px" class="cls_009"><span class="cls_009"># Add rows removed from validation set back into edx set</span></div>
+<div style="position:absolute;left:43.50px;top:346.59px" class="cls_011"><span class="cls_011">removed &lt;- anti_join(temp, validation)</span></div>
+<div style="position:absolute;left:43.50px;top:357.39px" class="cls_011"><span class="cls_011">edx &lt;- rbind(edx, removed)</span></div>
+<div style="position:absolute;left:43.50px;top:379.00px" class="cls_011"><span class="cls_011">mu &lt;- mean(edx$rating)</span></div>
+<div style="position:absolute;left:43.50px;top:400.60px" class="cls_011"><span class="cls_011">rm(test_index, temp, movielens, removed)</span></div>
+<div style="position:absolute;left:43.50px;top:422.21px" class="cls_011"><span class="cls_011">set.seed(</span><span class="cls_013">1</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:433.01px" class="cls_009"><span class="cls_009"># if using R 3.5 or earlier, use `set.seed(1)` instead</span></div>
+<div style="position:absolute;left:43.50px;top:454.62px" class="cls_011"><span class="cls_011">test_index &lt;- createDataPartition(y = edx$rating, times = </span><span class="cls_013">1</span><span class="cls_011">, p = </span><span class="cls_013">0.8</span><span class="cls_011">, list = </span><span class="cls_015">FALSE</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:465.42px" class="cls_011"><span class="cls_011">train_set &lt;- edx[-test_index,]</span></div>
+<div style="position:absolute;left:43.50px;top:476.22px" class="cls_011"><span class="cls_011">temp &lt;- edx[test_index,]</span></div>
+<div style="position:absolute;left:43.50px;top:497.83px" class="cls_011"><span class="cls_011">test_set &lt;- temp %>%</span></div>
+<div style="position:absolute;left:66.90px;top:508.63px" class="cls_011"><span class="cls_011">semi_join(train_set, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:66.90px;top:519.44px" class="cls_011"><span class="cls_011">semi_join(train_set, by = </span><span class="cls_012">"userId"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:541.04px" class="cls_009"><span class="cls_009"># Add rows removed from test set back into train set</span></div>
+<div style="position:absolute;left:43.50px;top:562.65px" class="cls_011"><span class="cls_011">removed &lt;- anti_join(temp, test_set)</span></div>
+<div style="position:absolute;left:43.50px;top:573.45px" class="cls_011"><span class="cls_011">train_set &lt;- rbind(train_set, removed)</span></div>
+<div style="position:absolute;left:43.50px;top:595.06px" class="cls_011"><span class="cls_011">rm(test_index, temp, removed)</span></div>
+<div style="position:absolute;left:43.50px;top:616.66px" class="cls_011"><span class="cls_011">l_optimizer &lt;- </span><span class="cls_010">function</span><span class="cls_011">(train_set, lambdas){</span></div>
+<div style="position:absolute;left:62.22px;top:638.27px" class="cls_011"><span class="cls_011">rmses &lt;- sapply(lambdas, </span><span class="cls_010">function</span><span class="cls_011">(l){</span></div>
+<div style="position:absolute;left:80.71px;top:659.88px" class="cls_009"><span class="cls_009">#Calculate movie bias</span></div>
+<div style="position:absolute;left:80.94px;top:670.68px" class="cls_011"><span class="cls_011">b_i &lt;- train_set %>%</span></div>
+<div style="position:absolute;left:90.30px;top:681.48px" class="cls_011"><span class="cls_011">group_by(movieId) %>%</span></div>
+<div style="position:absolute;left:90.30px;top:692.29px" class="cls_011"><span class="cls_011">summarize(b_i = sum(rating - mu)/(n()+l))</span></div>
+<div style="position:absolute;left:80.71px;top:713.89px" class="cls_009"><span class="cls_009">#Calculate user bias</span></div>
+<div style="position:absolute;left:80.94px;top:724.69px" class="cls_011"><span class="cls_011">b_u &lt;- train_set %>%</span></div>
+<div style="position:absolute;left:90.30px;top:735.50px" class="cls_011"><span class="cls_011">left_join(b_i, by=</span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:90.30px;top:746.30px" class="cls_011"><span class="cls_011">group_by(userId) %>%</span></div>
+<div style="position:absolute;left:90.30px;top:757.10px" class="cls_011"><span class="cls_011">summarize(b_u = sum(rating - b_i - mu)/(n()+l))</span></div>
+<div style="position:absolute;left:80.71px;top:778.71px" class="cls_009"><span class="cls_009">#Predict ratings</span></div>
+<div style="position:absolute;left:80.94px;top:789.51px" class="cls_011"><span class="cls_011">predicted_ratings &lt;- test_set %>%</span></div>
+<div style="position:absolute;left:99.66px;top:800.32px" class="cls_011"><span class="cls_011">left_join(b_i, by=</span><span class="cls_012">'movieId'</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:99.66px;top:811.12px" class="cls_011"><span class="cls_011">left_join(b_u, by = </span><span class="cls_012">"userId"</span><span class="cls_011">) %>%</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:17040px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background21.jpg" width=595 height=842></div>
+<div style="position:absolute;left:99.66px;top:26.10px" class="cls_011"><span class="cls_011">left_join(b_u, by = </span><span class="cls_012">"userId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:99.66px;top:36.90px" class="cls_011"><span class="cls_011">mutate(pred = mu + b_i + b_u) %>%</span></div>
+<div style="position:absolute;left:99.66px;top:47.71px" class="cls_011"><span class="cls_011">pull(pred)</span></div>
+<div style="position:absolute;left:80.71px;top:69.31px" class="cls_009"><span class="cls_009">#Calculate the error for the specific lambda</span></div>
+<div style="position:absolute;left:80.71px;top:80.11px" class="cls_010"><span class="cls_010">return</span><span class="cls_011">(RMSE(predicted_ratings, test_set$rating))</span></div>
+<div style="position:absolute;left:62.22px;top:90.92px" class="cls_011"><span class="cls_011">})</span></div>
+<div style="position:absolute;left:48.31px;top:112.52px" class="cls_010"><span class="cls_010">return</span><span class="cls_011">(lambdas[which.min(rmses)])</span></div>
+<div style="position:absolute;left:43.50px;top:123.33px" class="cls_011"><span class="cls_011">}</span></div>
+<div style="position:absolute;left:43.50px;top:144.93px" class="cls_009"><span class="cls_009">#A vector of possible lambdas</span></div>
+<div style="position:absolute;left:43.50px;top:155.74px" class="cls_011"><span class="cls_011">lambdas &lt;- seq(</span><span class="cls_013">0</span><span class="cls_011">, </span><span class="cls_013">5</span><span class="cls_011">, </span><span class="cls_013">0.5</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:177.34px" class="cls_009"><span class="cls_009">#Assign the optimal lambda to a variable</span></div>
+<div style="position:absolute;left:43.50px;top:188.14px" class="cls_011"><span class="cls_011">lambda &lt;- l_optimizer(train_set, lambdas)</span></div>
+<div style="position:absolute;left:43.50px;top:209.75px" class="cls_009"><span class="cls_009">#Take a look at it</span></div>
+<div style="position:absolute;left:43.50px;top:220.55px" class="cls_011"><span class="cls_011">print(paste(</span><span class="cls_012">"Optimal Lambda :"</span><span class="cls_011">,lambda))</span></div>
+<div style="position:absolute;left:43.50px;top:242.16px" class="cls_009"><span class="cls_009">#Calculate movie bias</span></div>
+<div style="position:absolute;left:43.50px;top:252.96px" class="cls_011"><span class="cls_011">b_i &lt;- edx %>%</span></div>
+<div style="position:absolute;left:52.86px;top:263.77px" class="cls_011"><span class="cls_011">group_by(movieId) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:274.57px" class="cls_011"><span class="cls_011">summarize(b_i = sum(rating - mu)/(n()+lambda))</span></div>
+<div style="position:absolute;left:43.50px;top:296.17px" class="cls_009"><span class="cls_009">#Calculate user bias</span></div>
+<div style="position:absolute;left:43.50px;top:306.98px" class="cls_011"><span class="cls_011">b_u &lt;- edx %>%</span></div>
+<div style="position:absolute;left:52.86px;top:317.78px" class="cls_011"><span class="cls_011">left_join(b_i, by=</span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:328.58px" class="cls_011"><span class="cls_011">group_by(userId) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:339.39px" class="cls_011"><span class="cls_011">summarize(b_u = sum(rating - b_i - mu)/(n()+lambda))</span></div>
+<div style="position:absolute;left:43.50px;top:360.99px" class="cls_009"><span class="cls_009">#Function to calculate the residuals</span></div>
+<div style="position:absolute;left:43.50px;top:382.60px" class="cls_011"><span class="cls_011">resids &lt;- </span><span class="cls_010">function</span><span class="cls_011">( train_set = train_set, mu = mu ){</span></div>
+<div style="position:absolute;left:53.11px;top:404.20px" class="cls_009"><span class="cls_009">#This function takes training set, calculates the residuals left after subtracting mu, user and movie bias</span></div>
+<div style="position:absolute;left:53.11px;top:415.01px" class="cls_009"><span class="cls_009">#from actual rating and transforms it into a sparse matrix with movieIds as columns and users as row</span></div>
+<div style="position:absolute;left:52.86px;top:436.61px" class="cls_011"><span class="cls_011">df &lt;- train_set %>%</span></div>
+<div style="position:absolute;left:94.98px;top:447.42px" class="cls_011"><span class="cls_011">left_join(b_i, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:458.22px" class="cls_011"><span class="cls_011">left_join(b_u, by = </span><span class="cls_012">"userId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:469.02px" class="cls_011"><span class="cls_011">mutate(res = rating - (mu + b_i + b_u) ) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:479.83px" class="cls_011"><span class="cls_011">select(userId, movieId, res) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:490.63px" class="cls_011"><span class="cls_011">spread( movieId, res ) %>% as.data.frame()</span></div>
+<div style="position:absolute;left:53.11px;top:512.23px" class="cls_009"><span class="cls_009">#Name the rows</span></div>
+<div style="position:absolute;left:52.86px;top:523.04px" class="cls_011"><span class="cls_011">rownames(df)&lt;- df[,</span><span class="cls_013">1</span><span class="cls_011">]</span></div>
+<div style="position:absolute;left:52.86px;top:533.84px" class="cls_011"><span class="cls_011">df &lt;- df[,-</span><span class="cls_013">1</span><span class="cls_011">]</span></div>
+<div style="position:absolute;left:43.50px;top:544.64px" class="cls_011"><span class="cls_011">}</span></div>
+<div style="position:absolute;left:43.50px;top:566.25px" class="cls_009"><span class="cls_009">#convert our train set to residuals</span></div>
+<div style="position:absolute;left:43.50px;top:577.05px" class="cls_009"><span class="cls_009">#tr &lt;- resids(train_set = train_set,mu=mu)</span></div>
+<div style="position:absolute;left:43.50px;top:598.66px" class="cls_009"><span class="cls_009">#A quick look at the residual values</span></div>
+<div style="position:absolute;left:43.50px;top:609.46px" class="cls_009"><span class="cls_009">#print("Residuals of the first 10 users and movies")</span></div>
+<div style="position:absolute;left:43.50px;top:620.27px" class="cls_009"><span class="cls_009">#tr[1:10,1:10] %>% print()</span></div>
+<div style="position:absolute;left:43.50px;top:641.87px" class="cls_011"><span class="cls_011">optimizer &lt;- </span><span class="cls_010">function</span><span class="cls_011">(tr = tr,</span></div>
+<div style="position:absolute;left:146.45px;top:652.67px" class="cls_011"><span class="cls_011">test_set = test_set,</span></div>
+<div style="position:absolute;left:146.45px;top:663.48px" class="cls_011"><span class="cls_011">ks,gammas,lambdas,min_epochs, min_improvements){</span></div>
+<div style="position:absolute;left:53.11px;top:685.08px" class="cls_009"><span class="cls_009">#Inputs: parameters of funkSVD function</span></div>
+<div style="position:absolute;left:52.86px;top:695.89px" class="cls_011"><span class="cls_011">d &lt;- data.frame(k = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:706.69px" class="cls_011"><span class="cls_011">gamma = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:717.49px" class="cls_011"><span class="cls_011">lambda = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:728.30px" class="cls_011"><span class="cls_011">min_epochs = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:739.10px" class="cls_011"><span class="cls_011">min_improvement = </span><span class="cls_015">NULL</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:127.73px;top:749.90px" class="cls_011"><span class="cls_011">rmse = </span><span class="cls_015">NULL</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:80.71px;top:771.51px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (k </span><span class="cls_010">in</span><span class="cls_011"> ks){</span></div>
+<div style="position:absolute;left:80.71px;top:782.31px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (g </span><span class="cls_010">in</span><span class="cls_011"> gammas){</span></div>
+<div style="position:absolute;left:80.71px;top:793.11px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (l </span><span class="cls_010">in</span><span class="cls_011"> lambdas){</span></div>
+<div style="position:absolute;left:80.71px;top:803.92px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (e </span><span class="cls_010">in</span><span class="cls_011"> min_epochs){</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:17892px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background22.jpg" width=595 height=842></div>
+<div style="position:absolute;left:80.71px;top:29.70px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (imp </span><span class="cls_010">in</span><span class="cls_011"> min_improvements) {</span></div>
+<div style="position:absolute;left:90.32px;top:51.31px" class="cls_009"><span class="cls_009">#decompose residuals with funk SVD</span></div>
+<div style="position:absolute;left:90.30px;top:62.11px" class="cls_011"><span class="cls_011">a &lt;- funkSVD(tr,</span></div>
+<div style="position:absolute;left:151.13px;top:72.91px" class="cls_011"><span class="cls_011">k = k,</span></div>
+<div style="position:absolute;left:151.13px;top:83.72px" class="cls_011"><span class="cls_011">gamma = g,</span></div>
+<div style="position:absolute;left:151.13px;top:94.52px" class="cls_011"><span class="cls_011">lambda = l,</span></div>
+<div style="position:absolute;left:151.13px;top:105.32px" class="cls_011"><span class="cls_011">min_epochs = e,</span></div>
+<div style="position:absolute;left:151.13px;top:116.12px" class="cls_011"><span class="cls_011">max_epochs = </span><span class="cls_013">200</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:151.13px;top:126.93px" class="cls_011"><span class="cls_011">min_improvement = imp,</span></div>
+<div style="position:absolute;left:151.13px;top:137.73px" class="cls_011"><span class="cls_011">verbose = </span><span class="cls_015">TRUE</span><span class="cls_011"> )</span></div>
+<div style="position:absolute;left:95.12px;top:159.34px" class="cls_009"><span class="cls_009">#recompose them (returns a full matrix in place of the sparse tr)</span></div>
+<div style="position:absolute;left:94.98px;top:170.14px" class="cls_011"><span class="cls_011">r &lt;- tcrossprod(a$U, a$V)</span></div>
+<div style="position:absolute;left:95.12px;top:191.75px" class="cls_009"><span class="cls_009">#pass the original colnames to the new matrix</span></div>
+<div style="position:absolute;left:94.98px;top:202.55px" class="cls_011"><span class="cls_011">colnames(r) &lt;- colnames(tr)</span></div>
+<div style="position:absolute;left:95.12px;top:224.15px" class="cls_009"><span class="cls_009">#create a new vector (called re) on test set</span></div>
+<div style="position:absolute;left:95.12px;top:234.96px" class="cls_009"><span class="cls_009">#containing the appropriate p * q (recomposed) term</span></div>
+<div style="position:absolute;left:94.98px;top:245.76px" class="cls_011"><span class="cls_011">test_set$re &lt;- seq(</span><span class="cls_013">0</span><span class="cls_011">,nrow(test_set)-</span><span class="cls_013">1</span><span class="cls_011">) </span><span class="cls_009">#to-be-filled vector of zeros</span></div>
+<div style="position:absolute;left:95.12px;top:267.37px" class="cls_009"><span class="cls_009">#for each row of test set</span></div>
+<div style="position:absolute;left:95.12px;top:278.17px" class="cls_010"><span class="cls_010">for</span><span class="cls_011"> (i </span><span class="cls_010">in</span><span class="cls_011"> </span><span class="cls_013">1</span><span class="cls_011">:nrow(test_set)){</span></div>
+<div style="position:absolute;left:108.92px;top:299.78px" class="cls_009"><span class="cls_009">#fill the vector of zeros with the proper calculated p*q quantity</span></div>
+<div style="position:absolute;left:109.02px;top:310.58px" class="cls_011"><span class="cls_011">test_set$re[i] &lt;-  r[ test_set$userId[i] , which(test_set$movieId[i] == colnames(r)) ]</span></div>
+<div style="position:absolute;left:118.38px;top:332.18px" class="cls_011"><span class="cls_011">}</span></div>
+<div style="position:absolute;left:108.92px;top:353.79px" class="cls_009"><span class="cls_009">#calculate our prediction</span></div>
+<div style="position:absolute;left:109.02px;top:364.59px" class="cls_011"><span class="cls_011">tes &lt;- test_set %>%</span></div>
+<div style="position:absolute;left:109.02px;top:375.40px" class="cls_011"><span class="cls_011">left_join(b_i, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>% </span><span class="cls_009">#bring the movie bias</span></div>
+<div style="position:absolute;left:109.02px;top:386.20px" class="cls_011"><span class="cls_011">left_join(b_u, by = </span><span class="cls_012">"userId"</span><span class="cls_011">) %>% </span><span class="cls_009">#bring the user bias</span></div>
+<div style="position:absolute;left:109.02px;top:397.00px" class="cls_011"><span class="cls_011">mutate(pred = mu + b_i + b_u + re) </span><span class="cls_009"># calculate our prediction</span></div>
+<div style="position:absolute;left:108.92px;top:418.61px" class="cls_009"><span class="cls_009">#store results in a data frame</span></div>
+<div style="position:absolute;left:109.02px;top:429.41px" class="cls_011"><span class="cls_011">d &lt;- d %>% rbind(data.frame(k = k, gamma = g, lambda = l,</span></div>
+<div style="position:absolute;left:240.04px;top:440.21px" class="cls_011"><span class="cls_011">min_epochs = e, min_improvement = imp,</span></div>
+<div style="position:absolute;left:240.04px;top:451.02px" class="cls_011"><span class="cls_011">rmse = ModelMetrics::rmse(tes$rating, tes$pred) ) )</span></div>
+<div style="position:absolute;left:109.02px;top:472.62px" class="cls_011"><span class="cls_011">}}}}}</span></div>
+<div style="position:absolute;left:53.11px;top:494.23px" class="cls_010"><span class="cls_010">return</span><span class="cls_011">(d)</span></div>
+<div style="position:absolute;left:43.50px;top:505.03px" class="cls_011"><span class="cls_011">}</span></div>
+<div style="position:absolute;left:43.50px;top:526.64px" class="cls_009"><span class="cls_009">#Define the parameters</span></div>
+<div style="position:absolute;left:43.50px;top:537.44px" class="cls_011"><span class="cls_011">ks &lt;- c(</span><span class="cls_013">1</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:548.24px" class="cls_011"><span class="cls_011">gammas &lt;-  c(</span><span class="cls_013">.009</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:559.05px" class="cls_011"><span class="cls_011">lambdas &lt;- c(</span><span class="cls_013">.005</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:569.85px" class="cls_011"><span class="cls_011">min_epochs &lt;- c(</span><span class="cls_013">5</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:580.65px" class="cls_011"><span class="cls_011">min_improvements &lt;- c(</span><span class="cls_013">.001</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:602.26px" class="cls_011"><span class="cls_011">optimization &lt;- </span><span class="cls_015">FALSE</span></div>
+<div style="position:absolute;left:43.50px;top:623.87px" class="cls_010"><span class="cls_010">if</span><span class="cls_011">(optimization){</span></div>
+<div style="position:absolute;left:52.86px;top:634.67px" class="cls_011"><span class="cls_011">results &lt;- optimizer(tr = tr, test_set = test_set, ks,gammas,lambdas,min_epochs, min_improvements)</span></div>
+<div style="position:absolute;left:52.86px;top:656.28px" class="cls_011"><span class="cls_011">results %>%</span></div>
+<div style="position:absolute;left:62.22px;top:667.08px" class="cls_011"><span class="cls_011">ggplot( aes( x = reorder(k,rmse) , y = (rmse)) ) +</span></div>
+<div style="position:absolute;left:62.22px;top:677.88px" class="cls_011"><span class="cls_011">geom_point(aes(col = as.factor(gamma) ), size = </span><span class="cls_013">9</span><span class="cls_011">, alpha = </span><span class="cls_013">.8</span><span class="cls_011">) +</span></div>
+<div style="position:absolute;left:62.22px;top:688.68px" class="cls_011"><span class="cls_011">coord_flip() +</span></div>
+<div style="position:absolute;left:62.22px;top:699.49px" class="cls_011"><span class="cls_011">geom_vline(xintercept = </span><span class="cls_013">1</span><span class="cls_011">:nrow(results), col = </span><span class="cls_012">"grey80"</span><span class="cls_011">) + </span><span class="cls_009">#lines on which our dots "walk"</span></div>
+<div style="position:absolute;left:62.22px;top:710.29px" class="cls_011"><span class="cls_011">theme_minimal()+</span></div>
+<div style="position:absolute;left:62.22px;top:721.09px" class="cls_011"><span class="cls_011">theme(axis.line = element_blank()) +</span></div>
+<div style="position:absolute;left:62.22px;top:731.90px" class="cls_011"><span class="cls_011">labs(title = </span><span class="cls_012">"RMSE results"</span><span class="cls_011">, subtitle =  </span><span class="cls_012">""</span><span class="cls_011"> , y = </span><span class="cls_012">"RMSE"</span><span class="cls_011">, x = </span><span class="cls_012">"Ranks"</span><span class="cls_011">, col = </span><span class="cls_012">"Gamma"</span><span class="cls_011">, shape = </span><span class="cls_012">"Lambda"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:52.86px;top:753.50px" class="cls_011"><span class="cls_011">opt_params &lt;- results[which(results$rmse == min(results$rmse)),]</span></div>
+<div style="position:absolute;left:43.50px;top:785.91px" class="cls_011"><span class="cls_011">}</span><span class="cls_010">el e</span><span class="cls_011">{</span></div>
+<div style="position:absolute;left:52.86px;top:807.52px" class="cls_011"><span class="cls_011">results &lt;- c(ks,gammas,lambdas,min_epochs,min_improvements)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:18744px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="5fa792da-8be4-11ec-a980-0cc47a792c0a_id_5fa792da-8be4-11ec-a980-0cc47a792c0a_files/background23.jpg" width=595 height=842></div>
+<div style="position:absolute;left:52.86px;top:44.10px" class="cls_011"><span class="cls_011">opt_params &lt;- results</span></div>
+<div style="position:absolute;left:43.50px;top:54.91px" class="cls_011"><span class="cls_011">}</span></div>
+<div style="position:absolute;left:43.50px;top:87.32px" class="cls_012"><span class="cls_012">"Optimal Parameters : "</span><span class="cls_011"> %>% print()</span></div>
+<div style="position:absolute;left:43.50px;top:98.12px" class="cls_011"><span class="cls_011">opt_params %>% print()</span></div>
+<div style="position:absolute;left:43.50px;top:108.92px" class="cls_011"><span class="cls_011">rm(train_set,test_set)</span></div>
+<div style="position:absolute;left:43.50px;top:130.53px" class="cls_009"><span class="cls_009">#subtract the mean, movie and user biases</span></div>
+<div style="position:absolute;left:43.50px;top:141.33px" class="cls_011"><span class="cls_011">tr &lt;- resids(train_set = edx, mu=mu)</span></div>
+<div style="position:absolute;left:43.50px;top:162.94px" class="cls_011"><span class="cls_011">final_RMSE &lt;- optimizer( tr =  tr,</span></div>
+<div style="position:absolute;left:160.49px;top:173.74px" class="cls_011"><span class="cls_011">test_set = validation,</span></div>
+<div style="position:absolute;left:160.49px;top:184.54px" class="cls_011"><span class="cls_011">ks = opt_params[</span><span class="cls_013">1</span><span class="cls_011">],</span></div>
+<div style="position:absolute;left:160.49px;top:195.35px" class="cls_011"><span class="cls_011">gammas = opt_params[</span><span class="cls_013">2</span><span class="cls_011">],</span></div>
+<div style="position:absolute;left:160.49px;top:206.15px" class="cls_011"><span class="cls_011">lambdas = opt_params[</span><span class="cls_013">3</span><span class="cls_011">],</span></div>
+<div style="position:absolute;left:160.49px;top:216.95px" class="cls_011"><span class="cls_011">min_epochs = opt_params[</span><span class="cls_013">4</span><span class="cls_011">],</span></div>
+<div style="position:absolute;left:160.49px;top:227.76px" class="cls_011"><span class="cls_011">min_improvements = opt_params[</span><span class="cls_013">5</span><span class="cls_011">])</span></div>
+<div style="position:absolute;left:43.50px;top:249.36px" class="cls_011"><span class="cls_011">print(</span><span class="cls_012">"Final RMSE:"</span><span class="cls_011">)</span></div>
+<div style="position:absolute;left:43.50px;top:260.16px" class="cls_011"><span class="cls_011">final_RMSE$rmse %>% print()</span></div>
+<div style="position:absolute;left:43.50px;top:292.57px" class="cls_009"><span class="cls_009">#Bust the mean</span></div>
+<div style="position:absolute;left:43.50px;top:303.38px" class="cls_011"><span class="cls_011">mean_only &lt;- rmse(validation$rating,rep(mu,nrow(validation)))</span></div>
+<div style="position:absolute;left:43.50px;top:324.98px" class="cls_009"><span class="cls_009">#Adding the user bias</span></div>
+<div style="position:absolute;left:43.50px;top:346.59px" class="cls_011"><span class="cls_011">pred_bu &lt;- validation %>%</span></div>
+<div style="position:absolute;left:94.98px;top:357.39px" class="cls_011"><span class="cls_011">left_join(b_i, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:368.19px" class="cls_011"><span class="cls_011">mutate(pred = (mu + b_i) ) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:379.00px" class="cls_011"><span class="cls_011">pull(pred)</span></div>
+<div style="position:absolute;left:43.50px;top:400.60px" class="cls_011"><span class="cls_011">mean_bu &lt;- rmse(validation$rating,pred_bu)</span></div>
+<div style="position:absolute;left:43.50px;top:422.21px" class="cls_011"><span class="cls_011">pred_bu_bi &lt;- validation %>%</span></div>
+<div style="position:absolute;left:94.98px;top:433.01px" class="cls_011"><span class="cls_011">left_join(b_i, by = </span><span class="cls_012">"movieId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:443.82px" class="cls_011"><span class="cls_011">left_join(b_u, by = </span><span class="cls_012">"userId"</span><span class="cls_011">) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:454.62px" class="cls_011"><span class="cls_011">mutate(pred = (mu + b_i + b_u) ) %>%</span></div>
+<div style="position:absolute;left:94.98px;top:465.42px" class="cls_011"><span class="cls_011">pull(pred)</span></div>
+<div style="position:absolute;left:43.50px;top:487.03px" class="cls_011"><span class="cls_011">mean_bu_bi &lt;- rmse(validation$rating,pred_bu_bi)</span></div>
+<div style="position:absolute;left:43.50px;top:508.63px" class="cls_011"><span class="cls_011">data.frame(model = c(</span><span class="cls_012">"Mean Only"</span><span class="cls_011">,</span><span class="cls_012">"Mean + User Bias"</span><span class="cls_011">, </span><span class="cls_012">"Mean + User + Movie Bias"</span><span class="cls_011">, </span><span class="cls_012">"Mean + User + Movie Bias</span></div>
+<div style="position:absolute;left:43.50px;top:519.44px" class="cls_012"><span class="cls_012">+Matrix Factorization"</span><span class="cls_011">) ,</span></div>
+<div style="position:absolute;left:48.18px;top:530.24px" class="cls_011"><span class="cls_011">rmses = c(mean_only, mean_bu, mean_bu_bi, final_RMSE$rmse)) %>%</span></div>
+<div style="position:absolute;left:52.86px;top:541.04px" class="cls_011"><span class="cls_011">ggplot( aes(x = model, y = rmses) ) +</span></div>
+<div style="position:absolute;left:52.86px;top:551.85px" class="cls_011"><span class="cls_011">geom_point( size = </span><span class="cls_013">6</span><span class="cls_011">, col = </span><span class="cls_012">"#4c7329"</span><span class="cls_011"> ) +</span></div>
+<div style="position:absolute;left:52.86px;top:562.65px" class="cls_011"><span class="cls_011">coord_flip()+</span></div>
+<div style="position:absolute;left:52.86px;top:573.45px" class="cls_011"><span class="cls_011">theme_linedraw()+</span></div>
+<div style="position:absolute;left:52.86px;top:584.26px" class="cls_011"><span class="cls_011">labs( title = </span><span class="cls_012">"Comparison of Models"</span><span class="cls_011">, y = </span><span class="cls_012">"RMSE"</span><span class="cls_011">, x =</span><span class="cls_012">""</span><span class="cls_011">)</span></div>
+</div>
+
+</body>
+</html>
